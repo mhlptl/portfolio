@@ -18,7 +18,9 @@ body {
 
 body {
 	min-height: 100vh;
-	margin: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	background-color: #f6efe9;
 }
 
 #root {
@@ -62,10 +64,17 @@ body {
 .sticky-logo {
 	position: sticky;
 	top: 0;
+	left: 0;
 	text-align: start;
+
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	margin-left: 1rem;
+	width: 50%;
 }
 
-.name-shadow {
+/* .name-shadow {
 	margin-top: 1rem;
 	margin-left: -7.25rem;
 	position: absolute;
@@ -76,4 +85,51 @@ body {
 
 .first-name-shadow {
 	margin-left: -9rem;
+} */
+
+/* navbar */
+
+.navbar {
+	margin: 0;
+	width: 100%;
+	height: 4rem;
+	box-shadow: 0 4px 2px -2px gray;
+	/* margin-top: 1em;
+	margin-bottom: 1em; */
+	top: 0;
+	position: sticky;
+}
+
+.nav-list {
+	list-style-type: none;
+	height: inherit;
+	/* display: flex 1 1 0px; */
+	display: flex;
+	flex: 1 1 0px;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	right: 0;
+	flex-direction: row;
+}
+
+.nav-item {
+	list-style-type: none;
+	height: inherit;
+	justify-content: center;
+	align-self: center;
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+	cursor: pointer;
+	width: 5rem;
+}
+
+/* .nav-item:last-child {
+	margin-right: 1rem;
+} */
+
+.nav-item:hover {
+	background-color: #858786;
+	color: #f6efe9;
 }
