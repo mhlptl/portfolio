@@ -1,7 +1,7 @@
-import React, {useLayoutEffect, useRef} from "react";
+import React, {useLayoutEffect, useRef, useState} from "react";
 
 const Name = (): JSX.Element => {
-	// const [hide, setHide] = useState(false);
+	const [hide, setHide] = useState(false);
 
 	const topPos = (element: HTMLElement) => {
 		if (element === null) return 0;
@@ -17,13 +17,13 @@ const Name = (): JSX.Element => {
 				const nameContainer = nameRef.current;
 				if (nameContainer) {
 					nameContainer.classList.add("name-scroll", "sticky-logo");
-					// setHide(true);
+					setHide(true);
 				}
 			} else if (nameContainerPos > 0) {
 				const nameContainer = nameRef.current;
 				if (nameContainer) {
 					nameContainer.classList.remove("name-scroll", "sticky-logo");
-					// setHide(false);
+					setHide(false);
 				}
 			}
 		};
@@ -35,13 +35,16 @@ const Name = (): JSX.Element => {
 	return (
 		<div ref={nameRef} className='name-container'>
 			<div className='firstname'>
-				<span className='first-letter'>M</span>ehul
-				{/* {!hide && <span className='name-shadow first-name-shadow'>M</span>} */}
+				{/* <span className='html-tag'>{'< '}</span> */}
+				<span className='first-letter'>M</span>ehul <span className='first-letter'>P</span>atel
+				{/* <span className='html-tag'>{' />'}</span> */}
+				{/* {!hide && <span className='name-shadow first-name-shadow'>M</	span>} */}
 			</div>
-			<div className='lastname'>
-				<span className='first-letter'>P</span>atel
-				{/* {!hide && <span className='name-shadow'>P</span>} */}
-			</div>
+			{/* <div className='lastname'> */}
+			{/* <span className='first-letter'>P</span>atel */}
+			{/* {!hide && <span className='name-shadow'>P</span>} */}
+			{/* </div> */}
+			{!hide && <div className='title'>Software Engineer</div>}
 		</div>
 	);
 };

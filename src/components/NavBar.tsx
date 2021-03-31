@@ -7,6 +7,7 @@ const NavBar = (): JSX.Element => {
 		<nav className='navbar'>
 			{/* <Name/> */}
 			<ul className='nav-list'>
+				<NavItem name={"experience"} />
 				<NavItem name={"skills"} />
 				<NavItem name={"projects"} />
 				<NavItem name={"contact"} />
