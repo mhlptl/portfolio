@@ -1,9 +1,14 @@
 import React from "react";
 
-const SlantedBox = (): JSX.Element => {
+interface SlantedBoxProps {
+	containerClassName?: string;
+	className: string;
+}
+
+const SlantedBox = (props: SlantedBoxProps): JSX.Element => {
 	return (
-		<div className='slanted-div-container'>
-			<div className='slanted-div'></div>
+		<div className={props.containerClassName || "slanted-div-container"}>
+			<div className={props.className}></div>
 		</div>
 	);
 };

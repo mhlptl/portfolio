@@ -41,6 +41,7 @@ body {
 	font-weight: 900;
 	font-size: 3rem;
 	text-align: center;
+	z-index: 1;
 }
 
 .first-letter {
@@ -119,6 +120,7 @@ body {
 	position: sticky;
 	background-color: #b4ada3;
 	background-color: #2d2c2b;
+	z-index: 1;
 }
 
 .nav-list {
@@ -173,4 +175,57 @@ body {
 	position: relative;
 	overflow: hidden;
 	height: 23rem;
+}
+
+/* under name slanted div */
+
+.slanted-div-under-container {
+	position: relative;
+	overflow: hidden;
+	height: 50rem;
+	margin-top: -25rem;
+}
+
+.slanted-div-under {
+	height: 50px;
+	margin-top: 30rem;
+	margin-left: -5rem;
+	width: 120%;
+	background-color: #d33e43;
+	transform: rotate(-10deg);
+	z-index: -1;
+}
+
+.slanted-div-under-container2 {
+	position: relative;
+	overflow: hidden;
+	height: 30rem;
+	margin-top: -27.8rem;
+}
+
+.slanted-div-under2 {
+	height: 25px;
+	margin-top: 12rem;
+	margin-left: -5rem;
+	width: 120%;
+	background-color: #d33e43;
+	transform: rotate(-10deg);
+	z-index: -1;
+}
+
+.slanted-div-under-container3 {
+	position: relative;
+	overflow: hidden;
+	height: 30rem;
+	margin-top: -27.5rem;
+}
+
+.slanted-div-under3 {
+	height: 12.5px;
+	margin-top: 12rem;
+	margin-left: -5rem;
+	width: 120%;
+	background-color: #d33e43;
+	transform: rotate(-10deg);
+	z-index: -1;
 }

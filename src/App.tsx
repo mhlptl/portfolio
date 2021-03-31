@@ -7,8 +7,11 @@ const App = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			<NavBar />
-			<SlantedBox />
+			<SlantedBox className={"slanted-div"} />
 			<Name />
+			<SlantedBox containerClassName={"slanted-div-under-container"} className={"slanted-div-under"} />
+			<SlantedBox containerClassName={"slanted-div-under-container2"} className={"slanted-div-under2"} />
+			<SlantedBox containerClassName={"slanted-div-under-container3"} className={"slanted-div-under3"} />
 		</React.Fragment>
 	);
 };
