@@ -399,3 +399,21 @@ body {
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--foreground);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d33e43;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #e0787b;
+}
