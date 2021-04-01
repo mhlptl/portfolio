@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+	.nav-list {
+		display: none;
+	}
+
+	.slanted-div-container {
+		height: 15rem;
+	}
+
+	.section-container {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.menu-icon {
+		display: block;
+		height: inherit;
+		width: 2rem;
+		margin-right: 1rem;
+		cursor: pointer;
+	}
+
+	.nav-item {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-left: 0;
+		width: 100%;
+		background-color: var(--foreground);
+		color: var(--background);
+	}
+}
+
+.show-nav {
+	display: flex;
+	margin-top: 4rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: inherit;
+	position: fixed;
+}

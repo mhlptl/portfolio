@@ -2,12 +2,14 @@
 	/* --background: #ccd3d9; */
 	--background: #b8bec3;
 	--foreground: #2d2c2b;
+	--shadow: gray;
 }
 
 :root[color-mode="dark"] {
 	--background: #2d2c2b;
 	/* --foreground: #ccd3d9; */
 	--foreground: #b8bec3;
+	--shadow: #3a3937;
 }
 
 * {
@@ -43,8 +45,15 @@ body {
 }
 
 #root {
-	height: 100vh;
+	min-height: 100vh;
+	position: relative;
+	/* height: 4000px; */
+	/* width: 100%; */
+}
+
+.content {
 	height: 4000px;
+	padding-bottom: 2.5rem;
 }
 
 /* name */
@@ -113,7 +122,19 @@ body {
 	color: #ccd3d9;
 	color: var(--foreground);
 	font-size: 1.5rem;
+	cursor: pointer;
+	user-select: none;
+	height: 1.5rem;
 	/* font-weight: 400; */
+}
+
+.hex {
+	font-size: 1rem;
+	color: #d33e43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: auto;
 }
 
 /* .name-shadow {
@@ -135,7 +156,7 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 4rem;
-	/* box-shadow: 0 4px 2px -2px gray; */
+	box-shadow: 0 4px 2px -2px var(--shadow);
 	top: 0;
 	position: sticky;
 	background-color: #b4ada3;
@@ -143,18 +164,19 @@ body {
 	background-color: var(--background);
 	z-index: 1;
 	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-icon {
+	display: none;
 }
 
 .nav-list {
 	list-style-type: none;
 	height: inherit;
-	/* display: flex 1 1 0px; */
 	display: flex;
 	flex: 1 1 0px;
 	justify-content: flex-end;
-	/* position: absolute;
-	top: 0;
-	right: 0; */
 	flex-direction: row;
 }
 
@@ -217,7 +239,7 @@ body {
 	height: 50px;
 	margin-top: 30rem;
 	margin-left: -5rem;
-	width: 120%;
+	width: 130%;
 	background-color: #d33e43;
 	transform: rotate(-10deg);
 	z-index: -1;
@@ -235,7 +257,7 @@ body {
 	height: 25px;
 	margin-top: 12rem;
 	margin-left: -5rem;
-	width: 120%;
+	width: 130%;
 	background-color: #d33e43;
 	transform: rotate(-10deg);
 	z-index: -1;
@@ -253,7 +275,7 @@ body {
 	height: 12.5px;
 	margin-top: 12rem;
 	margin-left: -5rem;
-	width: 120%;
+	width: 130%;
 	background-color: #d33e43;
 	transform: rotate(-10deg);
 	z-index: -1;
@@ -416,4 +438,16 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #e0787b;
+}
+
+/* footer */
+
+.footer {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	font-size: 1rem;
 }

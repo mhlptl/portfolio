@@ -2,6 +2,7 @@ import React, {useLayoutEffect, useRef, useState} from "react";
 
 const Name = (): JSX.Element => {
 	const [hide, setHide] = useState(false);
+	const [showHex, setShowHex] = useState(false);
 
 	const topPos = (element: HTMLElement) => {
 		if (element === null) return 0;
@@ -58,7 +59,16 @@ const Name = (): JSX.Element => {
 			{/* <span className='first-letter'>P</span>atel */}
 			{/* {!hide && <span className='name-shadow'>P</span>} */}
 			{/* </div> */}
-			{!hide && <div className='title'>Software Engineer</div>}
+			{!hide && 
+				<div
+					onClick={() => {
+						setShowHex(!showHex);
+					}}
+					className={`title ${showHex && "hex"}`}
+				>
+					{showHex ? "53 6f 66 74 77 61 72 65 20 45 6e 67 69 6e 65 65 72" : "Software Engineer"}
+				</div>
+			}
 		</div>
 	);
 };
