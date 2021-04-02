@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ColorToggle from "./ColorToggle";
 // import Name from './Name';
 import NavItem from "./NavItem";
-import {AiOutlineMenu} from "react-icons/ai";
+import Menu from "../svg/menu.svg";
 
 const NavBar = (): JSX.Element => {
 	const [show, setShow] = useState(false);
@@ -22,7 +22,7 @@ const NavBar = (): JSX.Element => {
 			</ul>
 			<ColorToggle />
 
-			<AiOutlineMenu onClick={handleClick} className={"menu-icon"} />
+			<Menu onClick={handleClick} className={"menu-icon"} />
 		</nav>
 	);
 };
