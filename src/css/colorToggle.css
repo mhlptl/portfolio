@@ -1,0 +1,14 @@
+.color-toggle {
+	display: flex;
+	align-items: center;
+	/* justify-content: flex-end; */
+
+	height: inherit;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	margin-top: -0.1rem;
+
+	font-size: 1.25rem;
+	cursor: pointer;
+	user-select: none;
+}

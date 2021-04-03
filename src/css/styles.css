@@ -239,19 +239,6 @@ body {
 	z-index: -1;
 }
 
-.color-toggle {
-	height: inherit;
-	font-size: 1.25rem;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	cursor: pointer;
-	user-select: none;
-	margin-right: 1rem;
-	margin-left: 1rem;
-	margin-top: -0.1rem;
-}
-
 /* skill */
 
 .section-title {

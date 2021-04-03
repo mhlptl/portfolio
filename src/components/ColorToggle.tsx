@@ -1,13 +1,16 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import "../css/colorToggle.css";
 
 const ColorToggle = (): JSX.Element => {
 	const [light, setLight] = useState<boolean>(true);
 
 	const handleClick = () => {
-		console.log(light);
 		setLight(!light);
-		document.documentElement.setAttribute("color-mode", !light ? "light" : "dark");
 	};
+
+	useEffect(() => {
+		document.documentElement.setAttribute("color-mode", light ? "light" : "dark");
+	}, [light]);
 
 	return (
 		<div className='color-toggle' onClick={handleClick}>
