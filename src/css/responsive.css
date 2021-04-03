@@ -1,11 +1,104 @@
-@media only screen and (max-width: 600px) {
+/* up to small mobile device */
+@media only screen and (max-width: 320px) {
+	.slanted-div-container {
+		height: 11rem;
+	}
+}
+
+/* small to medium mobile device */
+@media only screen and (min-width: 320px) {
+	.slanted-div-container {
+		height: 12rem;
+	}
+}
+
+/* medium to large mobile device */
+@media only screen and (min-width: 375px) {
+}
+
+/* large mobile device to tablet */
+@media only screen and (min-width: 425px) {
+	.slanted-div-container {
+		height: 12.5rem;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.slanted-div-container {
+		height: 15rem;
+	}
+
+	.name-container {
+		margin-bottom: 0.75rem;
+	}
+}
+
+/* tablet to laptop */
+@media only screen and (min-width: 768px) {
+	.slanted-div-container {
+		height: 17.5rem;
+	}
+
+	.name-container {
+		margin-bottom: 1rem;
+	}
+}
+
+/* tablet to large laptop  */
+@media only screen and (min-width: 1024px) {
+	.slanted-div-container {
+		height: 19.5rem;
+	}
+}
+
+/* from large laptop to 4K */
+@media only screen and (min-width: 1440px) {
+	.slanted-div-container {
+		height: 23.5rem;
+	}
+
+	.name-container {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.slanted-div-container {
+		height: 27rem;
+	}
+
+	.name-container {
+		margin-bottom: 2.25rem;
+	}
+}
+
+@media only screen and (min-width: 2400px) {
+	.slanted-div-container {
+		height: 30rem;
+	}
+}
+
+/* 4K+ */
+@media only screen and (min-width: 2560px) {
+	.slanted-div-container {
+		height: 35rem;
+	}
+
+	.name-container {
+		margin-bottom: 4.5rem;
+	}
+}
+
+/* from before */
+
+@media only screen and (max-width: 750px) {
 	.nav-list {
 		display: none;
 	}
 
-	.slanted-div-container {
+	/* .slanted-div-container {
 		height: 15rem;
-	}
+	} */
 
 	.section-container {
 		margin-left: 2rem;
@@ -18,6 +111,7 @@
 		width: 2rem;
 		margin-right: 1rem;
 		cursor: pointer;
+		fill: #d33e43;
 	}
 
 	.nav-item {
