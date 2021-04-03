@@ -560,7 +560,7 @@ body {
 }
 
 .section-list {
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 }
 
 .section-image-container {
@@ -569,4 +569,24 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/* experience */
+
+.position-information {
+	text-align: center;
+	font-size: 1.15rem;
+}
+
+.position {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.experience-information {
+	list-style-type: "🏡 ";
+	margin: 0;
+	padding: 0;
+	margin-left: 2rem;
+	margin-top: 2rem;
 }
