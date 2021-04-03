@@ -3,6 +3,7 @@ import ColorToggle from "./ColorToggle";
 // import Name from './Name';
 import NavItem from "./NavItem";
 import Menu from "../svg/menu.svg";
+import "../css/navbar.css";
 
 const NavBar = (): JSX.Element => {
 	const [show, setShow] = useState(false);
