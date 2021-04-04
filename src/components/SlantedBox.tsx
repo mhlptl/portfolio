@@ -2,14 +2,16 @@ import React from "react";
 import "../css/slantedBox.css";
 
 interface SlantedBoxProps {
-	containerClassName?: string;
-	className: string;
+	size: string;
+	className?: string;
 }
 
 const SlantedBox = (props: SlantedBoxProps): JSX.Element => {
+	const {size, className} = props;
+
 	return (
-		<div className={props.containerClassName || "slanted-div-container"}>
-			<div className={props.className}></div>
+		<div className={`slanted-box-container ${className || ""}`}>
+			<div className={`slanted-box-${size}`}></div>
 		</div>
 	);
 };

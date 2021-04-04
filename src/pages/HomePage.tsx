@@ -9,11 +9,11 @@ import SlantedBox from "../components/SlantedBox";
 const HomePage = (): JSX.Element => {
 	return (
 		<div className='content'>
-			<SlantedBox className={"slanted-div"} />
+			<SlantedBox size={"xl"} />
 			<Name />
-			<SlantedBox containerClassName={"slanted-div-under-container"} className={"slanted-div-under"} />
-			<SlantedBox containerClassName={"slanted-div-under-container2"} className={"slanted-div-under2"} />
-			<SlantedBox containerClassName={"slanted-div-under-container3"} className={"slanted-div-under3"} />
+			<SlantedBox size={"lg"} />
+			<SlantedBox size={"md"} className={"raise-md"} />
+			<SlantedBox size={"sm"} className={"raise-sm"} />
 			{/* <ExperiencePage /> */}
 			{/* <SkillsPage /> */}
 			{/* <ProjectsPage /> */}

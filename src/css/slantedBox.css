@@ -1,0 +1,58 @@
+.slanted-box-container {
+	height: 550px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+
+	font-size: 16px;
+}
+
+.slanted-box-xl {
+	height: 500px;
+	width: 200%;
+	margin-top: -30.4em;
+	margin-left: -6em;
+
+	transform: rotate(-10deg);
+	background-color: #d33e43;
+}
+
+.slanted-box-lg {
+	height: 50px;
+	width: 200%;
+	margin-top: 1em;
+	margin-left: -3em;
+
+	transform: rotate(-10deg);
+	background-color: #d33e43;
+}
+
+.slanted-box-md {
+	height: 25px;
+	width: 200%;
+	margin-top: 1em;
+	margin-left: -3em;
+
+	transform: rotate(-10deg);
+	background-color: #d33e43;
+}
+
+.slanted-box-sm {
+	height: 12.5px;
+	width: 200%;
+	margin-top: 1em;
+	margin-left: -3em;
+
+	transform: rotate(-10deg);
+	background-color: #d33e43;
+}
+
+.raise-md {
+	font-size: 16px;
+	margin-top: -30.3em;
+}
+
+.raise-sm {
+	font-size: 16px;
+	margin-top: -32em;
+}
