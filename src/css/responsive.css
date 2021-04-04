@@ -1,5 +1,10 @@
 /* up to small mobile device */
 @media only screen and (max-width: 320px) {
+	html,
+	body {
+		font-size: 90%;
+	}
+
 	.slanted-box-container {
 		height: 150px;
 	}
@@ -10,6 +15,11 @@
 
 	.raise-sm {
 		margin-top: -115px;
+	}
+
+	.name-container {
+		margin-top: -2rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -25,6 +35,11 @@
 
 	.raise-sm {
 		margin-top: -115px;
+	}
+
+	.name-container {
+		margin-top: -0.25rem;
+		margin-bottom: 3rem;
 	}
 }
 
@@ -56,6 +71,10 @@
 	.raise-sm {
 		margin-top: -165px;
 	}
+
+	.name-container {
+		margin-bottom: 4rem;
+	}
 }
 
 /* tablet to laptop */
@@ -70,6 +89,10 @@
 
 	.raise-sm {
 		margin-top: -215px;
+	}
+
+	.name-container {
+		margin-bottom: 4rem;
 	}
 }
 
@@ -86,6 +109,10 @@
 	.raise-sm {
 		margin-top: -315px;
 	}
+
+	.name-container {
+		margin-top: -5rem;
+	}
 }
 
 /* from large laptop to 4K */
@@ -101,10 +128,31 @@
 	.raise-sm {
 		margin-top: -515px;
 	}
+
+	.name-container {
+		margin-top: -14rem;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.name-container {
+		margin-top: -10rem;
+	}
+}
+
+@media only screen and (min-width: 2200px) {
+	.name-container {
+		margin-top: -5rem;
+	}
 }
 
 /* 4K+ */
 @media only screen and (min-width: 2560px) {
+	html,
+	body {
+		font-size: 120%;
+	}
+
 	.slanted-box-container {
 		height: 950px;
 	}
@@ -115,6 +163,10 @@
 
 	.raise-sm {
 		margin-top: -915px;
+	}
+
+	.name-container {
+		margin-top: -20rem;
 	}
 }
 
