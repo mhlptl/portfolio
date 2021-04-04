@@ -6,7 +6,8 @@ interface LetterProps {
 }
 
 const Letter = (props: LetterProps): JSX.Element => {
-	return <span className={props.className}>{props.letter}</span>;
+	const {className, letter} = props;
+	return <span className={className}>{letter}</span>;
 };
 
 export default Letter;

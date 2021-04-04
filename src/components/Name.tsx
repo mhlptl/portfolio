@@ -1,4 +1,5 @@
 import React, {useLayoutEffect, useRef, useState} from "react";
+import "../css/name.css";
 
 const Name = (): JSX.Element => {
 	const [hide, setHide] = useState(false);
@@ -11,7 +12,6 @@ const Name = (): JSX.Element => {
 
 	const nameRef = useRef<HTMLDivElement>(null);
 	const firstNameRef = useRef<HTMLSpanElement>(null);
-	const lastNameRef = useRef<HTMLSpanElement>(null);
 
 	useLayoutEffect(() => {
 		const onScroll = () => {
@@ -21,7 +21,6 @@ const Name = (): JSX.Element => {
 				if (nameContainer) {
 					nameContainer.classList.add("name-scroll", "sticky-logo");
 					if (firstNameRef.current) firstNameRef.current.style.animationPlayState = "paused";
-					if (lastNameRef.current) lastNameRef.current.style.animationPlayState = "paused";
 
 					setHide(true);
 				}
@@ -30,7 +29,6 @@ const Name = (): JSX.Element => {
 				if (nameContainer) {
 					nameContainer.classList.remove("name-scroll", "sticky-logo");
 					if (firstNameRef.current) firstNameRef.current.style.animationPlayState = "running";
-					if (lastNameRef.current) lastNameRef.current.style.animationPlayState = "running";
 					setHide(false);
 				}
 			}
@@ -42,29 +40,20 @@ const Name = (): JSX.Element => {
 
 	return (
 		<div ref={nameRef} className='name-container'>
-			<div className='firstname'>
-				{/* <span className='html-tag'>{'< '}</span> */}
+			<div className='name'>
 				<span ref={firstNameRef} className='first-letter wobble'>
 					M
 				</span>
-				ehul
-				<span ref={lastNameRef} className='first-letter wobble'>
-					&nbsp;P
-				</span>
+				ehul&nbsp;
+				<span className='first-letter wobble'>P</span>
 				atel
-				{/* <span className='html-tag'>{' />'}</span> */}
-				{/* {!hide && <span className='name-shadow first-name-shadow'>M</	span>} */}
 			</div>
-			{/* <div className='lastname'> */}
-			{/* <span className='first-letter'>P</span>atel */}
-			{/* {!hide && <span className='name-shadow'>P</span>} */}
-			{/* </div> */}
 			{!hide && 
 				<div
 					onClick={() => {
 						setShowHex(!showHex);
 					}}
-					className={`title ${showHex && "hex"}`}
+					className={`title ${showHex ? "hexcode" : ""}`}
 				>
 					{showHex ? "53 6f 66 74 77 61 72 65 20 45 6e 67 69 6e 65 65 72" : "Software Engineer"}
 				</div>

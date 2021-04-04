@@ -1,0 +1,46 @@
+/* container which contains the name and title */
+.name-container {
+	z-index: 1;
+
+	margin-top: -5rem;
+
+	font-weight: 900;
+	font-size: 3rem;
+	text-align: center;
+}
+
+/* change the look of the first letter */
+.first-letter {
+	display: inline-block;
+	z-index: 1;
+
+	font-size: 5rem;
+	text-shadow: 2px 2px var(--foreground);
+	color: #d33e43;
+}
+
+/* on scroll change font size of the name */
+.name-scroll .first-letter,
+.name-scroll .name {
+	font-size: 2rem;
+	text-shadow: none;
+}
+
+/* occupation title */
+.title {
+	height: 1.5rem;
+
+	font-size: 1.5rem;
+	color: var(--foreground);
+	cursor: pointer;
+}
+
+/* styling for the hexcode of the occupation title */
+.hexcode {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1rem;
+	color: #d33e43;
+}

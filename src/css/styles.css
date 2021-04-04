@@ -64,52 +64,6 @@ body {
 
 /* name */
 
-.name-container {
-	/* margin-top: 10rem; */
-	margin-top: -5rem;
-	font-weight: 900;
-	font-size: 3rem;
-	text-align: center;
-	z-index: 1;
-}
-
-.first-letter {
-	color: #d33e43;
-	font-size: 5rem;
-	text-shadow: 2px 2px var(--foreground);
-	z-index: 1;
-	display: inline-block;
-}
-
-.lastname {
-	margin-left: 3.5rem;
-	display: block;
-}
-
-.name-scroll .first-letter,
-.name-scroll {
-	font-size: 2rem;
-	text-shadow: none;
-}
-
-.name-scroll .firstname,
-.name-scroll .lastname {
-	display: inline-block;
-}
-
-.name-scroll .lastname {
-	margin-left: 0.5rem;
-}
-
-.html-tag {
-	font-size: 4.5rem;
-	color: #d33e43;
-}
-
-.html-tag:first-child {
-	color: #ccd3d9;
-}
-
 .sticky-logo {
 	position: sticky;
 	top: 0;
@@ -121,26 +75,6 @@ body {
 	height: 4rem;
 	margin-left: 1rem;
 	width: 50%;
-}
-
-.title {
-	color: #d33e43;
-	color: #ccd3d9;
-	color: var(--foreground);
-	font-size: 1.5rem;
-	cursor: pointer;
-	user-select: none;
-	height: 1.5rem;
-	/* font-weight: 400; */
-}
-
-.hex {
-	font-size: 1rem;
-	color: #d33e43;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	user-select: auto;
 }
 
 /* .name-shadow {

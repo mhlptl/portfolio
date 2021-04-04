@@ -14,10 +14,10 @@ const HomePage = (): JSX.Element => {
 			<SlantedBox containerClassName={"slanted-div-under-container"} className={"slanted-div-under"} />
 			<SlantedBox containerClassName={"slanted-div-under-container2"} className={"slanted-div-under2"} />
 			<SlantedBox containerClassName={"slanted-div-under-container3"} className={"slanted-div-under3"} />
-			{/* <ExperiencePage />
-			<SkillsPage />
-			<ProjectsPage />
-			<Footer /> */}
+			{/* <ExperiencePage /> */}
+			{/* <SkillsPage /> */}
+			{/* <ProjectsPage /> */}
+			{/* <Footer /> */}
 		</div>
 	);
 };
