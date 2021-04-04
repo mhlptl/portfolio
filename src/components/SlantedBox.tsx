@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/slantedBox.css";
 
 interface SlantedBoxProps {
 	containerClassName?: string;
