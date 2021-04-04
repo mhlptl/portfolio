@@ -1,91 +1,120 @@
 /* up to small mobile device */
 @media only screen and (max-width: 320px) {
-	.slanted-div-container {
-		height: 11rem;
+	.slanted-box-container {
+		height: 150px;
+	}
+
+	.raise-md {
+		margin-top: -90px;
+	}
+
+	.raise-sm {
+		margin-top: -115px;
 	}
 }
 
 /* small to medium mobile device */
 @media only screen and (min-width: 320px) {
-	.slanted-div-container {
-		height: 12rem;
+	.slanted-box-container {
+		height: 150px;
+	}
+
+	.raise-md {
+		margin-top: -90px;
+	}
+
+	.raise-sm {
+		margin-top: -115px;
 	}
 }
 
 /* medium to large mobile device */
 @media only screen and (min-width: 375px) {
+	.slanted-box-container {
+		height: 150px;
+	}
+
+	.raise-md {
+		margin-top: -90px;
+	}
+
+	.raise-sm {
+		margin-top: -115px;
+	}
 }
 
 /* large mobile device to tablet */
 @media only screen and (min-width: 425px) {
-	.slanted-div-container {
-		height: 12.5rem;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	.slanted-div-container {
-		height: 15rem;
+	.slanted-box-container {
+		height: 200px;
 	}
 
-	.name-container {
-		margin-bottom: 0.75rem;
+	.raise-md {
+		margin-top: -140px;
+	}
+
+	.raise-sm {
+		margin-top: -165px;
 	}
 }
 
 /* tablet to laptop */
 @media only screen and (min-width: 768px) {
-	.slanted-div-container {
-		height: 17.5rem;
+	.slanted-box-container {
+		height: 250px;
 	}
 
-	.name-container {
-		margin-bottom: 1rem;
+	.raise-md {
+		margin-top: -190px;
+	}
+
+	.raise-sm {
+		margin-top: -215px;
 	}
 }
 
 /* tablet to large laptop  */
 @media only screen and (min-width: 1024px) {
-	.slanted-div-container {
-		height: 19.5rem;
+	.slanted-box-container {
+		height: 350px;
+	}
+
+	.raise-md {
+		margin-top: -290px;
+	}
+
+	.raise-sm {
+		margin-top: -315px;
 	}
 }
 
 /* from large laptop to 4K */
 @media only screen and (min-width: 1440px) {
-	.slanted-div-container {
-		height: 23.5rem;
+	.slanted-box-container {
+		height: 550px;
 	}
 
-	.name-container {
-		margin-bottom: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	.slanted-div-container {
-		height: 27rem;
+	.raise-md {
+		margin-top: -490px;
 	}
 
-	.name-container {
-		margin-bottom: 2.25rem;
-	}
-}
-
-@media only screen and (min-width: 2400px) {
-	.slanted-div-container {
-		height: 30rem;
+	.raise-sm {
+		margin-top: -515px;
 	}
 }
 
 /* 4K+ */
 @media only screen and (min-width: 2560px) {
-	.slanted-div-container {
-		height: 35rem;
+	.slanted-box-container {
+		height: 950px;
 	}
 
-	.name-container {
-		margin-bottom: 4.5rem;
+	.raise-md {
+		margin-top: -890px;
+	}
+
+	.raise-sm {
+		margin-top: -915px;
 	}
 }
 
