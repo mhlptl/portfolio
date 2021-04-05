@@ -2,7 +2,7 @@
 @media only screen and (max-width: 320px) {
 	html,
 	body {
-		font-size: 90%;
+		font-size: 80%;
 	}
 
 	.slanted-box-container {
@@ -136,7 +136,7 @@
 
 @media only screen and (min-width: 1800px) {
 	.name-container {
-		margin-top: -10rem;
+		margin-top: -9rem;
 	}
 }
 

@@ -1,0 +1,12 @@
+.section-container {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-bottom: 2rem;
+}
+
+.section-title {
+	display: inline-block;
+
+	font-size: 3rem;
+	text-shadow: 2px 2px #d33e43;
+}

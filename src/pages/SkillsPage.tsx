@@ -21,7 +21,7 @@ const SkillsPage = (): JSX.Element => {
 	return (
 		<div className='skills-section'>
 			<div className='section-container'>
-				<Header className={"section-title"} word={"Skills"} />
+				<Header word={"Skills"} />
 				<div className='inner-section'>
 					<div className='section-description'>
 						<div>

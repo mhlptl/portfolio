@@ -6,7 +6,7 @@ const ExperiencePage = (): JSX.Element => {
 	return (
 		<div className='experience-section'>
 			<div className='section-container'>
-				<Header className='section-title' word={"Experience"} />
+				<Header word={"Experience"} />
 				<div className='inner-section'>
 					<div className='section-description'>
 						<div>

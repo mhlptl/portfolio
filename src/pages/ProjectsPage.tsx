@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const ProjectsPage = (): JSX.Element => {
 	return (
 		<div className='section-container'>
-			<Header className={"section-title"} word={"Projects"} />
+			<Header word={"Projects"} />
 			{/* <div className='projects-container'>
 				<Project/>
 				<Project/>
