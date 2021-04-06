@@ -148,6 +148,7 @@
 
 	.raise-sm {
 		margin-top: -315px;
+		height: 300px;
 	}
 
 	.name-container {
@@ -173,6 +174,7 @@
 
 	.raise-sm {
 		margin-top: -515px;
+		height: 425px;
 	}
 
 	.name-container {
@@ -189,6 +191,10 @@
 @media only screen and (min-width: 2200px) {
 	.name-container {
 		margin-top: -5rem;
+	}
+
+	.raise-sm {
+		height: 600px;
 	}
 }
 
@@ -209,6 +215,7 @@
 
 	.raise-sm {
 		margin-top: -915px;
+		height: 700px;
 	}
 
 	.name-container {
