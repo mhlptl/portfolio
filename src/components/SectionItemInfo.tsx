@@ -1,21 +1,24 @@
 import React from "react";
-import ListItem from "./ListItem";
+import ExperienceHeader from "./ExperienceHeader";
+import SectionItemList from "./SectionItemList";
 
-interface SectionItemInfoProps {
-	list: string[];
-	bulletStyle?: string;
-}
+const list = [
+	"Used Google Maps API to provide details of places nearby",
+	"Led team of interns to build site and tools to be used by clients and internally",
+	"Collaborated with developers to break project into smaller increments"
+];
 
-const SectionItemInfo = (props: SectionItemInfoProps): JSX.Element => {
-	const {list, bulletStyle} = props;
-
-	const createList = () => {
-		return list.map((item, index) => {
-			return <ListItem key={index} text={item} />;
-		});
-	};
-
-	return <ul className={`section-item-info ${bulletStyle ? bulletStyle : ""}`}>{createList()}</ul>;
+const SectionItemInfo = (): JSX.Element => {
+	return (
+		<div className={"section-item-info"}>
+			<ExperienceHeader
+				companyName={"Proptio"}
+				companyPosition={"Software Engineer"}
+				companyTimeline={"September 2018 - November 2019"}
+			/>
+			<SectionItemList list={list} bulletStyle={"house"} />
+		</div>
+	);
 };
 
 export default SectionItemInfo;

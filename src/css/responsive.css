@@ -77,6 +77,22 @@
 	}
 }
 
+@media only screen and (max-width: 550px) {
+	.section-image-container {
+		display: none;
+	}
+
+	.section-item-info {
+		margin-right: 2rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-item-image {
+		transform: scale(0.3);
+	}
+}
+
 /* tablet to laptop */
 @media only screen and (min-width: 768px) {
 	.slanted-box-container {
