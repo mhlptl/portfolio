@@ -12,7 +12,7 @@ const config: Configuration = {
 	context: path.resolve(__dirname, "src"),
 	entry: "./index.tsx",
 	output: {
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "dist/"),
 		filename: "main.js",
 		clean: true
 	},
