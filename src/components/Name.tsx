@@ -12,16 +12,18 @@ const Name = (): JSX.Element => {
 
 	const nameRef = useRef<HTMLDivElement>(null);
 	const firstNameRef = useRef<HTMLSpanElement>(null);
+	const lastNameRef = useRef<HTMLSpanElement>(null);
 
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			const nameContainerPos = topPos(nameRef.current as HTMLElement);
 			if (nameContainerPos <= 0) {
+				// console.log(nameContainerPos)
 				const nameContainer = nameRef.current;
 				if (nameContainer) {
 					nameContainer.classList.add("name-scroll", "sticky-logo");
 					if (firstNameRef.current) firstNameRef.current.style.animationPlayState = "paused";
-
+					if (lastNameRef.current) lastNameRef.current.style.animationPlayState = "paused";
 					setHide(true);
 				}
 			} else if (nameContainerPos > 0) {
@@ -29,6 +31,7 @@ const Name = (): JSX.Element => {
 				if (nameContainer) {
 					nameContainer.classList.remove("name-scroll", "sticky-logo");
 					if (firstNameRef.current) firstNameRef.current.style.animationPlayState = "running";
+					if (lastNameRef.current) lastNameRef.current.style.animationPlayState = "running";
 					setHide(false);
 				}
 			}
@@ -45,7 +48,9 @@ const Name = (): JSX.Element => {
 					M
 				</span>
 				ehul&nbsp;
-				<span className='first-letter wobble'>P</span>
+				<span ref={lastNameRef} className='first-letter wobble'>
+					P
+				</span>
 				atel
 			</div>
 			{!hide && 
