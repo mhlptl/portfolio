@@ -254,21 +254,6 @@ body {
 	margin-top: 2rem;
 }
 
-.skills-image {
-	/* width: 100%; */
-	transform: scale(0.5);
-}
-
-.skills-image:nth-child(odd) {
-	border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
-}
-
-.skills-image:nth-child(even) {
-	border-top-right-radius: 0.5rem;
-	border-bottom-right-radius: 0.5rem;
-}
-
 .section-list {
 	list-style-type: "☁️ ";
 	margin: 0;

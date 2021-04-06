@@ -6,7 +6,9 @@ interface SkillProps {
 }
 
 const Skill = (props: SkillProps): JSX.Element => {
-	return <props.SVG className='skills' />;
+	const {SVG} = props;
+
+	return <SVG className='skills-image' />;
 };
 
 export default Skill;
