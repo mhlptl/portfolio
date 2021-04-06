@@ -8,7 +8,7 @@ interface SkillProps {
 const Skill = (props: SkillProps): JSX.Element => {
 	const {SVG} = props;
 
-	return <SVG className='skills-image' />;
+	return <SVG className='skills-image wobble' />;
 };
 
 export default Skill;

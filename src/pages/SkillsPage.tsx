@@ -142,7 +142,7 @@ const SkillsPage = (): JSX.Element => {
 							</React.Fragment>
 						</SectionItemInfo>
 						<SectionImage>
-							<Webdev className={"section-item-image"} />
+							<Webdev className={"section-item-image skills-item-image"} />
 						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
@@ -150,7 +150,7 @@ const SkillsPage = (): JSX.Element => {
 				<SectionItem>
 					<React.Fragment>
 						<SectionImage>
-							<Cloud className={"section-item-image"} />
+							<Cloud className={"section-item-image skills-item-image"} />
 						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
@@ -174,7 +174,7 @@ const SkillsPage = (): JSX.Element => {
 							</React.Fragment>
 						</SectionItemInfo>
 						<SectionImage>
-							<Automation className={"section-item-image"} />
+							<Automation className={"section-item-image skills-item-image"} />
 						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
