@@ -4,7 +4,7 @@ import Name from "../components/Name";
 import SlantedBox from "../components/SlantedBox";
 import ExperiencePage from "./ExperiencePage";
 // import ProjectsPage from "./ProjectsPage";
-// import SkillsPage from "./SkillsPage";
+import SkillsPage from "./SkillsPage";
 
 const HomePage = (): JSX.Element => {
 	return (
@@ -15,7 +15,7 @@ const HomePage = (): JSX.Element => {
 			<SlantedBox size={"md"} className={"raise-md"} />
 			<SlantedBox size={"sm"} className={"raise-sm"} />
 			<ExperiencePage />
-			{/* <SkillsPage /> */}
+			<SkillsPage />
 			{/* <ProjectsPage /> */}
 			{/* <Footer /> */}
 		</div>
