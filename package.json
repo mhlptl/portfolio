@@ -10,7 +10,7 @@
 		"lint:fix": "eslint --fix .",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write .",
-		"clean": "rimraf dist/*",
+		"clean": "rimraf public/*",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

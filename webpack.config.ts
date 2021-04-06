@@ -12,7 +12,7 @@ const config: Configuration = {
 	context: path.resolve(__dirname, "src"),
 	entry: "./index.tsx",
 	output: {
-		path: path.resolve(__dirname, "dist/"),
+		path: path.resolve(__dirname, "public"),
 		filename: "main.js",
 		clean: true
 	},
@@ -20,7 +20,7 @@ const config: Configuration = {
 		host: "localhost",
 		liveReload: true,
 		port: 3000,
-		contentBase: path.join(__dirname, "dist")
+		contentBase: path.join(__dirname, "public")
 	},
 	resolve: {
 		extensions: [".tsx", ".ts", ".jsx", ".js"]
