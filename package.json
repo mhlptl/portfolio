@@ -5,13 +5,14 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "webpack",
-		"start": "webpack serve --open",
+		"start": "webpack serve --mode development --open",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write .",
 		"clean": "rimraf public/*",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:dev": "webpack-dev-server"
 	},
 	"keywords": [],
 	"author": "",

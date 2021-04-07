@@ -14,13 +14,18 @@ const config: Configuration = {
 	output: {
 		path: path.resolve(__dirname, "public"),
 		filename: "main.js",
-		clean: true
+		clean: true,
+		publicPath: "/"
 	},
 	devServer: {
-		host: "localhost",
+		host: "0.0.0.0",
 		liveReload: true,
 		port: 3000,
-		contentBase: path.join(__dirname, "public")
+		disableHostCheck: true,
+		contentBase: path.join(__dirname, "public"),
+		openPage: "http://localhost:3000",
+		historyApiFallback: true,
+		compress: true
 	},
 	resolve: {
 		extensions: [".tsx", ".ts", ".jsx", ".js"]
