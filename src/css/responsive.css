@@ -263,6 +263,6 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		width: inherit;
-		position: fixed;
+		position: absolute;
 	}
 }
