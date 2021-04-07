@@ -13,6 +13,8 @@ const Name = (): JSX.Element => {
 	const nameRef = useRef<HTMLDivElement>(null);
 	const firstNameRef = useRef<HTMLSpanElement>(null);
 	const lastNameRef = useRef<HTMLSpanElement>(null);
+	console.log(nameRef.current?.clientWidth);
+	console.log(nameRef.current?.clientHeight);
 
 	useLayoutEffect(() => {
 		const onScroll = () => {

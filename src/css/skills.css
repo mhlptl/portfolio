@@ -15,6 +15,11 @@
 	margin-right: 1rem;
 }
 
+.skills-item-image {
+	overflow: visible;
+	transform: scale(0.4);
+}
+
 .cloud {
 	list-style-type: "☁️";
 }

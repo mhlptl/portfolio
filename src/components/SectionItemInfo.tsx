@@ -7,7 +7,11 @@ interface SectionItemInfoProps {
 const SectionItemInfo = (props: SectionItemInfoProps): JSX.Element => {
 	const {children} = props;
 
-	return <div className={"section-item-info"}>{children}</div>;
+	return (
+		<div className={"section-item-info"}>
+			<div>{children}</div>
+		</div>
+	);
 };
 
 export default SectionItemInfo;

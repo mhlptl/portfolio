@@ -43,6 +43,7 @@ body {
 	/* min-height: 100vh; */
 	/* margin-left: 2rem;
 	margin-right: 2rem; */
+	/* -webkit-text-size-adjust: 100%; */
 	background-color: #ccd3d9;
 	background-color: #565554;
 	background-color: #41403f;
@@ -50,6 +51,12 @@ body {
 	background-color: #2d2c2b;
 	background-color: var(--background);
 }
+
+/* @supports(padding: max(0px)) {
+	body {
+		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	}
+} */
 
 #root {
 	min-height: 100vh;
