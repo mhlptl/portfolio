@@ -36,10 +36,11 @@ body {
 	scroll-behavior: smooth;
 	color: #ccd3d9;
 	color: var(--foreground);
+	height: 100%;
 }
 
 body {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	/* margin-left: 2rem;
 	margin-right: 2rem; */
 	background-color: #ccd3d9;

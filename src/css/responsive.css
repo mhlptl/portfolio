@@ -256,13 +256,13 @@
 		background-color: var(--foreground);
 		color: var(--background);
 	}
-}
 
-.show-nav {
-	display: flex;
-	margin-top: 4rem;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: inherit;
-	position: fixed;
+	.show-nav {
+		display: flex;
+		margin-top: 4rem;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: inherit;
+		position: fixed;
+	}
 }

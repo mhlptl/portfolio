@@ -17,7 +17,7 @@ const Name = (): JSX.Element => {
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			const nameContainerPos = topPos(nameRef.current as HTMLElement);
-			if (nameContainerPos <= 0) {
+			if (nameContainerPos <= 20) {
 				// console.log(nameContainerPos)
 				const nameContainer = nameRef.current;
 				if (nameContainer) {
