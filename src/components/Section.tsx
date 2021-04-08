@@ -3,15 +3,16 @@ import "../css/section.css";
 import Header from "./Header";
 
 interface SectionProps {
+	id: string;
 	title: string;
 	children: JSX.Element;
 }
 
 const Section = (props: SectionProps): JSX.Element => {
-	const {title, children} = props;
+	const {id, title, children} = props;
 
 	return (
-		<section className='section-container'>
+		<section id={id} className='section-container'>
 			<Header word={title} />
 			{children}
 		</section>

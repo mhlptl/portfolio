@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import ColorToggle from "./ColorToggle";
-// import Name from './Name';
 import NavItem from "./NavItem";
 import Menu from "../svg/menu.svg";
 import "../css/navbar.css";
@@ -14,12 +13,17 @@ const NavBar = (): JSX.Element => {
 
 	return (
 		<nav className='navbar'>
-			{/* <Name/> */}
+			<div className={"nav-brand"}>
+				<span className={"first-letter"}>M</span>
+				<span className={"other-letters"}>ehul&nbsp;</span>
+				<span className={"first-letter"}>P</span>
+				<span className={"other-letters"}>atel</span>
+			</div>
 			<ul className={`nav-list ${show ? "show-nav" : ""}`}>
-				<NavItem name={"experience"} />
-				<NavItem name={"skills"} />
-				<NavItem name={"projects"} />
-				<NavItem name={"contact"} />
+				<NavItem name={"Experience"} link={"#experience"} />
+				<NavItem name={"Skills"} link={"#skills"} />
+				<NavItem name={"Projects"} link={"#projects"} />
+				<NavItem name={"Contact"} link={"#contact"} />
 			</ul>
 			<ColorToggle />
 

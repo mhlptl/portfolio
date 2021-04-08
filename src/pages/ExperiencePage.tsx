@@ -4,7 +4,7 @@ import Experience from "../components/Experience";
 
 const ExperiencePage = (): JSX.Element => {
 	return (
-		<Section title='Experience'>
+		<Section id={"experience"} title='Experience'>
 			<Experience />
 		</Section>
 	);

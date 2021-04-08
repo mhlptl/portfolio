@@ -215,7 +215,7 @@
 
 	.raise-sm {
 		margin-top: -915px;
-		height: 700px;
+		height: 650px;
 	}
 
 	.name-container {
@@ -228,11 +228,8 @@
 @media only screen and (max-width: 750px) {
 	.nav-list {
 		display: none;
+		background-color: var(--foreground);
 	}
-
-	/* .slanted-div-container {
-		height: 15rem;
-	} */
 
 	.section-container {
 		margin-left: 2rem;
@@ -249,8 +246,8 @@
 	}
 
 	.nav-item {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 		margin-left: 0;
 		width: 100%;
 		background-color: var(--foreground);

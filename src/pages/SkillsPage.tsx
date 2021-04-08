@@ -23,7 +23,7 @@ import Webdev from "../images/webdev.svg";
 import Cloud from "../images/server.svg";
 import Automation from "../images/code.svg";
 import SkillsHeader from "../components/SkillsHeader";
-import Skill from "../components/Skill";
+import Skill from "../components/SkillsImage";
 import SkillsImagesContainer from "../components/SkillsImagesContainer";
 
 const list = [
@@ -127,7 +127,7 @@ const SkillsPage = (): JSX.Element => {
 	};
 
 	return (
-		<Section title={"Skills"}>
+		<Section id={"skills"} title={"Skills"}>
 			<React.Fragment>
 				<SectionItem>
 					<React.Fragment>

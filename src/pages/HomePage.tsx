@@ -1,5 +1,5 @@
 import React from "react";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Name from "../components/Name";
 import SlantedBox from "../components/SlantedBox";
 import ExperiencePage from "./ExperiencePage";
@@ -17,7 +17,7 @@ const HomePage = (): JSX.Element => {
 			<ExperiencePage />
 			<SkillsPage />
 			{/* <ProjectsPage /> */}
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 };
