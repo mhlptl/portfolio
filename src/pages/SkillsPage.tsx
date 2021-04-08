@@ -43,83 +43,6 @@ const imageList = [
 ];
 
 const SkillsPage = (): JSX.Element => {
-	// return (
-	// 	<div className='skills-section'>
-	// 		<div className='section-container'>
-	// 			<Header className={"section-title"} word={"Skills"} />
-	// 			<div className='inner-section'>
-	// 				<div className='section-description'>
-	// 					<div>
-	// 						<h2 className='section-subtitle'>Full Stack Development</h2>
-	// 						<div className='skills-container'>
-	// 							<Skill SVG={HTMLSVG} name='HTML' />
-	// 							<Skill SVG={CSSSVG} name='CSS' />
-	// 							<Skill SVG={JSSVG} name='JavaScript' />
-	// 							<Skill SVG={TSSVG} name='TypeScript' />
-	// 							<Skill SVG={ReactSVG} name='ReactJS' />
-	// 							<Skill SVG={NodeSVG} name='NodeJS' />
-	// 						</div>
-	// 						<div>
-	// 							<ul className='section-list'>
-	// 								<li>Building responsive frontends using React.js</li>
-	// 								<li>Creating backends for applications using Node.js</li>
-	// 								<li>TypeScript to enhance code quality</li>
-	// 							</ul>
-	// 						</div>
-	// 					</div>
-	// 				</div>
-	// 				<div className='section-image-container'>
-	// 					<Webdev className={"skills-image"} />
-	// 				</div>
-	// 			</div>
-
-	// 			<div className='inner-section'>
-	// 				<div className='section-image-container'>
-	// 					<Cloud className={"skills-image"} />
-	// 				</div>
-	// 				<div className='section-description'>
-	// 					<div>
-	// 						<h2 className='section-subtitle'>Cloud</h2>
-	// 						<div className='skills-container'>
-	// 							<Skill SVG={DockerSVG} name='Docker' />
-	// 							<Skill SVG={AWSSVG} name='Amazon Web Services' />
-	// 							<Skill SVG={MongoSVG} name='MongoDB' />
-	// 							<Skill SVG={PGSVG} name='PostgreSQL' />
-	// 						</div>
-	// 						<div>
-	// 							<ul className='section-list'>
-	// 								<li>Using Postgres + MongoDB to store data</li>
-	// 								<li>Containerizing projects using Docker for seamless deployment</li>
-	// 							</ul>
-	// 						</div>
-	// 					</div>
-	// 				</div>
-	// 			</div>
-
-	// 			<div className='inner-section'>
-	// 				<div className='section-description'>
-	// 					<div>
-	// 						<h2 className='section-subtitle'>Other</h2>
-	// 						<div className='skills-container'>
-	// 							<Skill SVG={PySVG} name='Python' />
-	// 							<Skill SVG={JavaSVG} name='Java' />
-	// 						</div>
-	// 						<div>
-	// 							<ul className='section-list'>
-	// 								<li>Running automation scripts using Python</li>
-	// 								<li>Building GUI applications using Java and JavaFX</li>
-	// 							</ul>
-	// 						</div>
-	// 					</div>
-	// 				</div>
-	// 				<div className='section-image-container'>
-	// 					<Automation className='skills-image' />
-	// 				</div>
-	// 			</div>
-	// 		</div>
-	// 	</div>
-	// );
-
 	const getImages = (index: number) => {
 		return imageList[index].map((image, index) => {
 			return <Skill key={index} SVG={image} name={"name"} />;
@@ -131,6 +54,9 @@ const SkillsPage = (): JSX.Element => {
 			<React.Fragment>
 				<SectionItem>
 					<React.Fragment>
+						<SectionImage>
+							<Webdev className={"section-item-image skills-item-image"} />
+						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
 								<SkillsHeader skillsName={"Full Stack Development"}>
@@ -141,17 +67,11 @@ const SkillsPage = (): JSX.Element => {
 								<SectionItemList list={list[0]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
-						<SectionImage>
-							<Webdev className={"section-item-image skills-item-image"} />
-						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
 
 				<SectionItem>
 					<React.Fragment>
-						<SectionImage>
-							<Cloud className={"section-item-image skills-item-image"} />
-						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
 								<SkillsHeader skillsName={"Cloud Infrastructure"}>
@@ -160,11 +80,17 @@ const SkillsPage = (): JSX.Element => {
 								<SectionItemList list={list[1]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
+						<SectionImage>
+							<Cloud className={"section-item-image skills-item-image"} />
+						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
 
 				<SectionItem>
 					<React.Fragment>
+						<SectionImage>
+							<Automation className={"section-item-image skills-item-image"} />
+						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
 								<SkillsHeader skillsName={"Software Development"}>
@@ -173,9 +99,6 @@ const SkillsPage = (): JSX.Element => {
 								<SectionItemList list={list[2]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
-						<SectionImage>
-							<Automation className={"section-item-image skills-item-image"} />
-						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
 			</React.Fragment>

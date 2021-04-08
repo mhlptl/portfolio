@@ -1,15 +1,16 @@
 .experience-name {
-	font-size: 2.75rem;
+	font-size: 3rem;
 	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
 .experience-position {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
 .experience-timeline {
-	font-size: 1.15rem;
+	font-size: 1.25rem;
 }
 
 .house {

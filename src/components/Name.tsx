@@ -18,7 +18,7 @@ const Name = (props: NameProps): JSX.Element => {
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			const nameContainerPos = topPos(nameRef.current as HTMLElement);
-			if (nameContainerPos <= -15) {
+			if (nameContainerPos <= -30) {
 				props.setHide(false);
 			} else {
 				props.setHide(true);

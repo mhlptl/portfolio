@@ -18,7 +18,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 	};
 
 	return (
-		<nav className='navbar'>
+		<nav className={`navbar ${!hide ? "navbar-small" : ""}`}>
 			<div className={"nav-brand"}>
 				{!hide && 
 					<React.Fragment>
@@ -29,7 +29,12 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 					</React.Fragment>
 				}
 			</div>
-			<ul className={`nav-list ${show ? "show-nav" : ""}`}>
+			<ul
+				onClick={() => {
+					setShow(false);
+				}}
+				className={`nav-list ${show ? "show-nav" : ""}`}
+			>
 				<NavItem name={"Experience"} link={"#experience"} />
 				<NavItem name={"Skills"} link={"#skills"} />
 				<NavItem name={"Projects"} link={"#projects"} />

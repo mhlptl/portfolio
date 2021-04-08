@@ -8,8 +8,8 @@ const SectionItemInfo = (props: SectionItemInfoProps): JSX.Element => {
 	const {children} = props;
 
 	return (
-		<div className={"section-item-info"}>
-			<div>{children}</div>
+		<div className={"section-item-info-container"}>
+			<div className={"section-item-info"}>{children}</div>
 		</div>
 	);
 };

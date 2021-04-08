@@ -43,6 +43,13 @@
 	}
 }
 
+@media only screen and (max-width: 375px) {
+	html,
+	body {
+		font-size: 90%;
+	}
+}
+
 /* medium to large mobile device */
 @media only screen and (min-width: 375px) {
 	.slanted-box-container {
@@ -82,7 +89,7 @@
 		display: none;
 	}
 
-	.section-item-info {
+	.section-item-info-container {
 		margin-right: 2rem;
 	}
 }
@@ -93,7 +100,7 @@
 	}
 
 	.skills-item-image {
-		transform: scale(0.25);
+		transform: scale(0.2);
 	}
 
 	.skills-image {
@@ -132,7 +139,7 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
 	.skills-item-image {
-		transform: scale(0.35);
+		transform: scale(0.32);
 	}
 }
 
@@ -158,7 +165,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1250px) {
 	.skills-item-image {
-		transform: scale(0.4);
+		transform: scale(0.37);
 	}
 }
 
@@ -261,5 +268,9 @@
 		justify-content: flex-start;
 		width: inherit;
 		position: absolute;
+	}
+
+	.navbar-small .show-nav {
+		margin-top: 3rem;
 	}
 }

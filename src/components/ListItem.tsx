@@ -7,7 +7,7 @@ interface ListItemProps {
 const ListItem = (props: ListItemProps): JSX.Element => {
 	const {text} = props;
 
-	return <li className='list-item'>{text}</li>;
+	return <li className={"list-item"}>{text}</li>;
 };
 
 export default ListItem;
