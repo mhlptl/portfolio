@@ -5,6 +5,7 @@
 	z-index: -1;
 
 	font-size: 16px;
+	/* opacity: 0.9; */
 }
 
 .slanted-box-xl {
@@ -15,6 +16,8 @@
 
 	transform: rotate(-10deg);
 	background-color: #d33e43;
+
+	/* filter: blur(8px); */
 }
 
 .slanted-box-lg {
@@ -25,6 +28,8 @@
 
 	transform: rotate(-10deg);
 	background-color: #d33e43;
+
+	/* filter: blur(4px); */
 }
 
 .slanted-box-md {
@@ -35,6 +40,8 @@
 
 	transform: rotate(-10deg);
 	background-color: #d33e43;
+
+	/* filter: blur(4px); */
 }
 
 .slanted-box-sm {
@@ -45,6 +52,8 @@
 
 	transform: rotate(-10deg);
 	background-color: #d33e43;
+
+	/* filter: blur(4px); */
 }
 
 .raise-md {

@@ -10,7 +10,7 @@ const NavItem = (props: NavItemProps): JSX.Element => {
 
 	return (
 		<a className={"nav-item"} href={link}>
-			<li className='nav-item'>{name}</li>
+			<li className={"expand-center"}>{name}</li>
 		</a>
 	);
 };
