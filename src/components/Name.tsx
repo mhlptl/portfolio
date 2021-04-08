@@ -1,11 +1,36 @@
-import React, {useState} from "react";
+import React, {useLayoutEffect, useRef, useState} from "react";
 import "../css/name.css";
 
-const Name = (): JSX.Element => {
+interface NameProps {
+	setHide: (arg0: boolean) => void;
+}
+
+const Name = (props: NameProps): JSX.Element => {
 	const [showHex, setShowHex] = useState(false);
 
+	const topPos = (element: HTMLElement) => {
+		if (element === null) return 0;
+		return element.getBoundingClientRect().top;
+	};
+
+	const nameRef = useRef<HTMLDivElement>(null);
+
+	useLayoutEffect(() => {
+		const onScroll = () => {
+			const nameContainerPos = topPos(nameRef.current as HTMLElement);
+			if (nameContainerPos <= -15) {
+				props.setHide(false);
+			} else {
+				props.setHide(true);
+			}
+		};
+
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
+
 	return (
-		<div className='name-container'>
+		<div ref={nameRef} className='name-container'>
 			<div className='name'>
 				<span className='first-letter wobble'>M</span>
 				ehul&nbsp;

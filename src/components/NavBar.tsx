@@ -4,8 +4,14 @@ import NavItem from "./NavItem";
 import Menu from "../svg/menu.svg";
 import "../css/navbar.css";
 
-const NavBar = (): JSX.Element => {
+interface NavBarProps {
+	hide: boolean;
+}
+
+const NavBar = (props: NavBarProps): JSX.Element => {
 	const [show, setShow] = useState(false);
+
+	const {hide} = props;
 
 	const handleClick = () => {
 		setShow(!show);
@@ -14,10 +20,14 @@ const NavBar = (): JSX.Element => {
 	return (
 		<nav className='navbar'>
 			<div className={"nav-brand"}>
-				<span className={"first-letter"}>M</span>
-				<span className={"other-letters"}>ehul&nbsp;</span>
-				<span className={"first-letter"}>P</span>
-				<span className={"other-letters"}>atel</span>
+				{!hide && 
+					<React.Fragment>
+						<span className={"first-letter"}>M</span>
+						<span className={"other-letters"}>ehul&nbsp;</span>
+						<span className={"first-letter"}>P</span>
+						<span className={"other-letters"}>atel</span>
+					</React.Fragment>
+				}
 			</div>
 			<ul className={`nav-list ${show ? "show-nav" : ""}`}>
 				<NavItem name={"Experience"} link={"#experience"} />

@@ -6,11 +6,15 @@ import ExperiencePage from "./ExperiencePage";
 // import ProjectsPage from "./ProjectsPage";
 import SkillsPage from "./SkillsPage";
 
-const HomePage = (): JSX.Element => {
+interface HomePageProps {
+	setHide: (arg0: boolean) => void;
+}
+
+const HomePage = (props: HomePageProps): JSX.Element => {
 	return (
 		<div className='content'>
 			<SlantedBox size={"xl"} />
-			<Name />
+			<Name setHide={props.setHide} />
 			<SlantedBox size={"lg"} />
 			<SlantedBox size={"md"} className={"raise-md"} />
 			<SlantedBox size={"sm"} className={"raise-sm"} />
