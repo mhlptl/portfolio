@@ -24,7 +24,7 @@
 	list-style-type: "☁️";
 } */
 
-.list-item::before {
+.cloud .list-item::before {
 	content: "☁️ ";
 	margin-inline-start: -3.3ch;
 }

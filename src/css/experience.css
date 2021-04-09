@@ -19,7 +19,7 @@
 	list-style-type: "🏡";
 } */
 
-.list-item::before {
+.house .list-item::before {
 	content: "🏡 ";
 	margin-inline-start: -3.3ch;
 }
