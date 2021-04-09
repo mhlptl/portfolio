@@ -90,3 +90,12 @@
 	/* height: inherit; */
 	/* width: inherit; */
 }
+
+.list-item {
+	margin: 0;
+	padding: 0;
+}
+
+.list-item {
+	list-style-type: none;
+}

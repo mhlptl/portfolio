@@ -20,6 +20,11 @@
 	transform: scale(0.4);
 }
 
-.cloud {
+/* .cloud {
 	list-style-type: "☁️";
+} */
+
+.list-item::before {
+	content: "☁️ ";
+	margin-inline-start: -3.3ch;
 }
