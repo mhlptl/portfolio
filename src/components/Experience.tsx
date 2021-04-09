@@ -26,7 +26,7 @@ const Experience = (): JSX.Element => {
 								companyTimeline={["September 2018 - November 2019", "(1 year, 2 months)"]}
 								direction={"left"}
 							/>
-							<SectionItemList list={list} bulletStyle={"house"} />
+							<SectionItemList direction={"left"} list={list} bulletStyle={"house"} />
 						</React.Fragment>
 					</SectionItemInfo>
 					<SectionImage>

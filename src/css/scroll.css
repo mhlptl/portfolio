@@ -22,3 +22,37 @@
 .right {
 	transform: translateX(200%);
 }
+
+.slide-out-left {
+	animation: slide-out-left 0.5s forwards;
+	-webkit-animation: slide-out-left 0.5s forwards;
+}
+
+.slide-out-right {
+	animation: slide-out-right 0.5s forwards;
+	-webkit-animation: slide-out-right 0.5s forwards;
+}
+
+@keyframes slide-out-left {
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+@-webkit-keyframes slide-out-left {
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+@keyframes slide-out-right {
+	100% {
+		transform: translateX(200%);
+	}
+}
+
+@-webkit-keyframes slide-out-right {
+	100% {
+		transform: translateX(200%);
+	}
+}

@@ -64,7 +64,7 @@ const SkillsPage = (): JSX.Element => {
 										<React.Fragment>{getImages(0)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
-								<SectionItemList list={list[0]} bulletStyle={"cloud"} />
+								<SectionItemList direction={"right"} list={list[0]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
 					</React.Fragment>
@@ -79,7 +79,7 @@ const SkillsPage = (): JSX.Element => {
 										<React.Fragment>{getImages(1)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
-								<SectionItemList list={list[1]} bulletStyle={"cloud"} />
+								<SectionItemList direction={"left"} list={list[1]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
 						<SectionImage>
@@ -100,7 +100,7 @@ const SkillsPage = (): JSX.Element => {
 										<React.Fragment>{getImages(2)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
-								<SectionItemList list={list[2]} bulletStyle={"cloud"} />
+								<SectionItemList direction={"right"} list={list[2]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
 					</React.Fragment>
