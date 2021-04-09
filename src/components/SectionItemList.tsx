@@ -1,5 +1,5 @@
 import React, {useRef, useLayoutEffect} from "react";
-import {toggleClass} from "../utils";
+import {addClass} from "../utils";
 import ListItem from "./ListItem";
 
 interface SectionItemListProps {
@@ -22,7 +22,7 @@ const SectionItemList = (props: SectionItemListProps): JSX.Element => {
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			if (listRef.current) {
-				toggleClass(listRef.current, "slide-in");
+				addClass(listRef.current, "slide-in");
 			}
 		};
 

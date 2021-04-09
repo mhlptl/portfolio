@@ -9,13 +9,11 @@ const inViewport = (element: HTMLElement): boolean => {
 	return rect.top >= 0 && rect.bottom <= bottom;
 };
 
-const toggleClass = (element: HTMLElement, className: string): void => {
+const addClass = (element: HTMLElement, className: string): void => {
 	if (inViewport(element)) {
-		!element.classList.contains(className) && element.classList.add(className);
-	} else {
-		element.classList.remove(className);
+		element.classList.add(className);
 	}
 };
 
 export default topPos;
-export {inViewport, toggleClass};
+export {inViewport, addClass};

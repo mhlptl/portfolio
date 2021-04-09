@@ -1,5 +1,5 @@
 import React, {useLayoutEffect, useRef} from "react";
-import {toggleClass} from "../utils";
+import {addClass} from "../utils";
 
 interface SkillsHeaderProps {
 	skillsName: string;
@@ -15,7 +15,7 @@ const SkillsHeader = (props: SkillsHeaderProps): JSX.Element => {
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			if (skillNameRef.current) {
-				toggleClass(skillNameRef.current, "slide-in");
+				addClass(skillNameRef.current, "slide-in");
 			}
 		};
 

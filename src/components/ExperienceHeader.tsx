@@ -1,5 +1,5 @@
 import React, {useLayoutEffect, useRef, useState} from "react";
-import {toggleClass} from "../utils";
+import {addClass} from "../utils";
 import "../css/scroll.css";
 
 interface ExperienceHeaderProps {
@@ -21,15 +21,15 @@ const ExperienceHeader = (props: ExperienceHeaderProps): JSX.Element => {
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			if (expNameRef.current) {
-				toggleClass(expNameRef.current, "slide-in");
+				addClass(expNameRef.current, "slide-in");
 			}
 
 			if (expPosRef.current) {
-				toggleClass(expPosRef.current, "slide-in");
+				addClass(expPosRef.current, "slide-in");
 			}
 
 			if (expTimeRef.current) {
-				toggleClass(expTimeRef.current, "slide-in");
+				addClass(expTimeRef.current, "slide-in");
 			}
 		};
 

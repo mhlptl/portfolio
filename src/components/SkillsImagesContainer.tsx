@@ -1,5 +1,5 @@
 import React, {useLayoutEffect, useRef} from "react";
-import {toggleClass} from "../utils";
+import {addClass} from "../utils";
 
 interface SkillsImagesContainerProps {
 	children: JSX.Element;
@@ -14,7 +14,7 @@ const SkillsImagesContainer = (props: SkillsImagesContainerProps): JSX.Element =
 	useLayoutEffect(() => {
 		const onScroll = () => {
 			if (imageRef.current) {
-				toggleClass(imageRef.current, "slide-in");
+				addClass(imageRef.current, "slide-in");
 			}
 		};
 
