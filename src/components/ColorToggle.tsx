@@ -1,14 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, {useLayoutEffect, useState} from "react";
 import "../css/colorToggle.css";
 
 const ColorToggle = (): JSX.Element => {
-	const [light, setLight] = useState<boolean>(true);
+	const prefersDark = window.matchMedia("(prefers-color-scheme: light)").matches;
+	const [light, setLight] = useState<boolean>(prefersDark);
 
 	const handleClick = () => {
 		setLight(!light);
 	};
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.documentElement.setAttribute("color-mode", light ? "light" : "dark");
 	}, [light]);
 
