@@ -2,17 +2,20 @@
 	font-size: 3rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
+	transform: translateX(-200%);
 }
 
 .experience-position {
 	font-size: 1.5rem;
 	font-weight: bold;
+	transform: translateX(-200%);
 }
 
 .experience-timeline {
 	font-size: 1.25rem;
 	white-space: nowrap;
 	cursor: pointer;
+	transform: translateX(-200%);
 }
 
 /* .house {

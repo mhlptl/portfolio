@@ -1,5 +1,6 @@
 import React, {useLayoutEffect, useRef, useState} from "react";
 import "../css/name.css";
+import topPos from "../utils";
 
 interface NameProps {
 	setHide: (arg0: boolean) => void;
@@ -7,11 +8,6 @@ interface NameProps {
 
 const Name = (props: NameProps): JSX.Element => {
 	const [showHex, setShowHex] = useState(false);
-
-	const topPos = (element: HTMLElement) => {
-		if (element === null) return 0;
-		return element.getBoundingClientRect().top;
-	};
 
 	const nameRef = useRef<HTMLDivElement>(null);
 

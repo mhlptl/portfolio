@@ -59,8 +59,8 @@ const SkillsPage = (): JSX.Element => {
 						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
-								<SkillsHeader skillsName={"Full Stack Development"}>
-									<SkillsImagesContainer>
+								<SkillsHeader skillsName={"Full Stack Development"} direction={"right"}>
+									<SkillsImagesContainer direction={"right"}>
 										<React.Fragment>{getImages(0)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
@@ -74,8 +74,10 @@ const SkillsPage = (): JSX.Element => {
 					<React.Fragment>
 						<SectionItemInfo>
 							<React.Fragment>
-								<SkillsHeader skillsName={"Cloud Infrastructure"}>
-									<React.Fragment>{getImages(1)}</React.Fragment>
+								<SkillsHeader skillsName={"Cloud Infrastructure"} direction={"left"}>
+									<SkillsImagesContainer direction={"left"}>
+										<React.Fragment>{getImages(1)}</React.Fragment>
+									</SkillsImagesContainer>
 								</SkillsHeader>
 								<SectionItemList list={list[1]} bulletStyle={"cloud"} />
 							</React.Fragment>
@@ -93,8 +95,10 @@ const SkillsPage = (): JSX.Element => {
 						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
-								<SkillsHeader skillsName={"Software Development"}>
-									<React.Fragment>{getImages(2)}</React.Fragment>
+								<SkillsHeader skillsName={"Software Development"} direction={"right"}>
+									<SkillsImagesContainer direction={"right"}>
+										<React.Fragment>{getImages(2)}</React.Fragment>
+									</SkillsImagesContainer>
 								</SkillsHeader>
 								<SectionItemList list={list[2]} bulletStyle={"cloud"} />
 							</React.Fragment>
