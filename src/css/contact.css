@@ -1,0 +1,31 @@
+.contact-container {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(400px, 1fr));
+	font-size: 1.75rem;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	grid-auto-flow: row;
+	width: 100%;
+}
+
+/* .contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+} */
+
+.contact-container div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 32rem;
+	height: 16rem; */
+	/* flex-grow: 1; */
+	/* text-align: center; */
+
+	width: inherit;
+	height: 8rem;
+}

@@ -116,6 +116,10 @@
 	.skills-image {
 		width: 3rem;
 	}
+
+	.contact-container {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 900px) {
@@ -214,6 +218,14 @@
 
 	.name-container {
 		margin-top: -14rem;
+	}
+
+	.contact-container {
+		width: 70%;
+	}
+
+	.contact-container div {
+		justify-content: flex-start;
 	}
 }
 
