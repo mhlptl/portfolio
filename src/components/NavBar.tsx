@@ -16,9 +16,9 @@ const navData = [
 	{name: "Contact", link: "#contact", id: "nav-contact", targetId: "contact"}
 ];
 
-// const ids = navData.map((item, index) => {
-// 	return {id: item.targetId, index: index};
-// })
+const ids = navData.map((item, index) => {
+	return {id: item.targetId, index: index};
+});
 
 const NavBar = (props: NavBarProps): JSX.Element => {
 	const [show, setShow] = useState(false);
@@ -45,28 +45,30 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 		};
 	}, [navRef]);
 
-	// useLayoutEffect(() => {
-	// 	const scrollSpy = (): void => {
-	// 		for (const obj of ids) {
-	// 			const el = document.getElementById(obj.id);
-	// 			if(el) {
-	// 				const rect = el.getBoundingClientRect();
-	// 				if((rect.top >= 0 && rect.bottom <= window.innerHeight) || (rect.top <= 0 && rect.bottom >= 0)) {
-	// 					setActiveIndex(obj.index)
-	// 					break;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// 	window.addEventListener("scroll", scrollSpy);
-	// 	return () => {
-	// 		return window.removeEventListener("scroll", scrollSpy)
-	// 	};
-	// }, [])
+	useLayoutEffect(() => {
+		const scrollSpy = (): void => {
+			for (const obj of ids) {
+				const el = document.getElementById(obj.id);
+				if (el) {
+					const rect = el.getBoundingClientRect();
+					if (rect.bottom >= 0 + 80 && rect.top + 80 <= window.innerHeight) {
+						setActiveIndex(obj.index);
+						break;
+					} else {
+						setActiveIndex(-1);
+					}
+				}
+			}
+		};
+		window.addEventListener("scroll", scrollSpy);
+		return () => {
+			return window.removeEventListener("scroll", scrollSpy);
+		};
+	}, [activeIndex]);
 
-	const handleNavClick = (index: number) => {
-		setActiveIndex(index);
-	};
+	// const handleNavClick = (index: number) => {
+	// 	setActiveIndex(index);
+	// };
 
 	return (
 		<header className='header'>
@@ -95,7 +97,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 								key={index}
 								active={index === activeIndex}
 								id={item.id}
-								handleClick={() => handleNavClick(index)}
+								// handleClick={() => handleNavClick(index)}
 							/>
 						);
 					})}
