@@ -1,19 +1,24 @@
-import React, {useState} from "react";
+import React, {useState, useLayoutEffect, useRef} from "react";
 import ColorToggle from "./ColorToggle";
 import NavItem from "./NavItem";
 import Menu from "../svg/menu.svg";
 import "../css/navbar.css";
+// import { inViewport } from "../utils";
 
 interface NavBarProps {
 	hide: boolean;
 }
 
 const navData = [
-	{name: "Experience", link: "#experience"},
-	{name: "Skills", link: "#skills"},
-	{name: "Projects", link: "#projects"},
-	{name: "Contact", link: "#contact"}
+	{name: "Experience", link: "#experience", id: "nav-experience", targetId: "experience"},
+	{name: "Skills", link: "#skills", id: "nav-skills", targetId: "skills"},
+	{name: "Projects", link: "#projects", id: "nav-projects", targetId: "projects"},
+	{name: "Contact", link: "#contact", id: "nav-contact", targetId: "contact"}
 ];
+
+// const ids = navData.map((item, index) => {
+// 	return {id: item.targetId, index: index};
+// })
 
 const NavBar = (props: NavBarProps): JSX.Element => {
 	const [show, setShow] = useState(false);
@@ -25,13 +30,47 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 		setShow(!show);
 	};
 
+	const navRef = useRef<HTMLElement>(null);
+
+	useLayoutEffect(() => {
+		const closeMenu = (e: MouseEvent) => {
+			if (navRef.current && !navRef.current.contains(e.target as Node)) {
+				setShow(false);
+			}
+		};
+
+		window.addEventListener("click", closeMenu);
+		return () => {
+			window.removeEventListener("click", closeMenu);
+		};
+	}, [navRef]);
+
+	// useLayoutEffect(() => {
+	// 	const scrollSpy = (): void => {
+	// 		for (const obj of ids) {
+	// 			const el = document.getElementById(obj.id);
+	// 			if(el) {
+	// 				const rect = el.getBoundingClientRect();
+	// 				if((rect.top >= 0 && rect.bottom <= window.innerHeight) || (rect.top <= 0 && rect.bottom >= 0)) {
+	// 					setActiveIndex(obj.index)
+	// 					break;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	window.addEventListener("scroll", scrollSpy);
+	// 	return () => {
+	// 		return window.removeEventListener("scroll", scrollSpy)
+	// 	};
+	// }, [])
+
 	const handleNavClick = (index: number) => {
 		setActiveIndex(index);
 	};
 
 	return (
 		<header className='header'>
-			<nav className={`navbar ${!hide ? "navbar-small" : ""}`}>
+			<nav ref={navRef} className={`navbar ${!hide ? "navbar-small" : ""}`}>
 				<div className={"nav-brand"}>
 					{!hide && 
 						<React.Fragment>
@@ -55,6 +94,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 								link={item.link}
 								key={index}
 								active={index === activeIndex}
+								id={item.id}
 								handleClick={() => handleNavClick(index)}
 							/>
 						);
