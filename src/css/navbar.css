@@ -32,7 +32,7 @@
 
 	height: inherit;
 
-	list-style-type: none;
+	/* list-style-type: none; */
 
 	/* flex-direction: row; */
 	/* flex: 1 1 0px; */
@@ -46,7 +46,7 @@
 
 	text-decoration: none;
 
-	width: 6em;
+	width: 8em;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	color: inherit;
@@ -94,4 +94,8 @@
 .expand-center:hover {
 	background-size: 100% 1px;
 	color: #e0787b;
+}
+
+.active {
+	color: #d33e43;
 }

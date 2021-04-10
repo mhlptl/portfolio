@@ -8,13 +8,25 @@ interface NavBarProps {
 	hide: boolean;
 }
 
+const navData = [
+	{name: "Experience", link: "#experience"},
+	{name: "Skills", link: "#skills"},
+	{name: "Projects", link: "#projects"},
+	{name: "Contact", link: "#contact"}
+];
+
 const NavBar = (props: NavBarProps): JSX.Element => {
 	const [show, setShow] = useState(false);
+	const [activeIndex, setActiveIndex] = useState<number>(-1);
 
 	const {hide} = props;
 
 	const handleClick = () => {
 		setShow(!show);
+	};
+
+	const handleNavClick = (index: number) => {
+		setActiveIndex(index);
 	};
 
 	return (
@@ -30,17 +42,28 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 						</React.Fragment>
 					}
 				</div>
-				<ul
+				<div
 					onClick={() => {
 						setShow(false);
 					}}
 					className={`nav-list ${show ? "show-nav" : ""}`}
 				>
-					<NavItem name={"Experience"} link={"#experience"} />
+					{navData.map((item, index) => {
+						return (
+							<NavItem
+								name={item.name}
+								link={item.link}
+								key={index}
+								active={index === activeIndex}
+								handleClick={() => handleNavClick(index)}
+							/>
+						);
+					})}
+					{/* <NavItem name={"Experience"} link={"#experience"} />
 					<NavItem name={"Skills"} link={"#skills"} />
 					<NavItem name={"Projects"} link={"#projects"} />
-					<NavItem name={"Contact"} link={"#contact"} />
-				</ul>
+					<NavItem name={"Contact"} link={"#contact"} /> */}
+				</div>
 				<ColorToggle />
 
 				<Menu onClick={handleClick} className={"menu-icon"} />
