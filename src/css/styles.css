@@ -94,8 +94,8 @@ body {
 }
 
 .content {
-	height: 4000px;
-	padding-bottom: 2.5rem;
+	/* height: 4000px; */
+	padding-bottom: 4rem;
 }
 
 /* name */
@@ -249,16 +249,18 @@ body {
 
 /* footer */
 
-.footer {
+/* .footer {
 	display: flex;
-	justify-content: center;
+	justify-content: center;	
 	align-items: center;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 2.5rem;
-	font-size: 1rem;
-}
+	height: 4rem;
+	font-size: 1rem; */
+/* margin-left: 1rem; */
+/* margin-right: 1rem; */
+/* }	 */
 
 /* skills */
 
@@ -367,3 +369,35 @@ body {
 	margin-left: 2rem;
 	margin-top: 2rem;
 } */
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	font-size: 1rem;
+}
+
+.footer-built-with {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/* margin-left: 10rem; */
+	/* opacity: 0; */
+}
+
+.footer-made-with {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.built-with-icon {
+	height: 1.75rem;
+	margin-left: 1rem;
+}
