@@ -18,5 +18,9 @@ const addClass = (element: HTMLElement, className: string): void => {
 	}
 };
 
+const isDarkMode = (): boolean => {
+	return document.documentElement.getAttribute("color-mode") === "dark";
+};
+
 export default topPos;
-export {inViewport, addClass};
+export {inViewport, addClass, isDarkMode};

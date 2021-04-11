@@ -8,6 +8,7 @@
 	--shadow: #3a3937;
 	--scroll-thumb: #4e4d4a;
 	--scroll-track: var(--darker);
+	--invert-percent: 0%;
 }
 
 :root[color-mode="light"] {
@@ -20,6 +21,7 @@
 	--shadow: #a7a7a7;
 	--scroll-thumb: #676767;
 	--scroll-track: var(--shadow);
+	--invert-percent: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -433,4 +435,8 @@ body {
 .contact-logo {
 	height: 28px;
 	margin-left: 1.5rem;
+}
+
+.contact-bw {
+	filter: invert(var(--invert-percent));
 }
