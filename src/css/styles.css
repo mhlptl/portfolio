@@ -409,3 +409,10 @@ body {
 	height: 1.75rem;
 	margin-left: 1rem;
 }
+
+.contact-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../components/Footer";
 import Name from "../components/Name";
 import SlantedBox from "../components/SlantedBox";
-import ContactPage from "./ContactPage";
 import ExperiencePage from "./ExperiencePage";
 // import ProjectsPage from "./ProjectsPage";
 import SkillsPage from "./SkillsPage";
@@ -22,7 +21,6 @@ const HomePage = (props: HomePageProps): JSX.Element => {
 			<ExperiencePage />
 			<SkillsPage />
 			{/* <ProjectsPage /> */}
-			<ContactPage />
 			<Footer />
 		</div>
 	);

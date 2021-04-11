@@ -12,8 +12,7 @@ interface NavBarProps {
 const navData = [
 	{name: "Experience", link: "#experience", id: "nav-experience", targetId: "experience"},
 	{name: "Skills", link: "#skills", id: "nav-skills", targetId: "skills"},
-	{name: "Projects", link: "#projects", id: "nav-projects", targetId: "projects"},
-	{name: "Contact", link: "#contact", id: "nav-contact", targetId: "contact"}
+	{name: "Projects", link: "#projects", id: "nav-projects", targetId: "projects"}
 ];
 
 const ids = navData.map((item, index) => {
