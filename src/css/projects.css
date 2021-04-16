@@ -32,3 +32,7 @@
 	/* border: 1px solid #d33e43; */
 	cursor: pointer;
 }
+
+.project-info {
+	margin-top: 1rem;
+}

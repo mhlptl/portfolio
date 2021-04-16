@@ -59,6 +59,17 @@ const ProjectsPage = (): JSX.Element => {
 								src={"/images/waterintake.png"}
 								alt={"water intake project screenshot"}
 							/>
+							<div className={"project-info"}>
+								<p>keep track of water intake data</p>
+								<p>keep track of water intake data</p>
+								<p>keep track of water intake data</p>
+								<p>keep track of water intake data</p>
+							</div>
+							<div className={"btn-container"}>
+								<button className={"btn btn-outline-primary btn-sm"}>Repo</button>
+								<button className={"btn btn-outline-primary btn-sm"}>Live Site</button>
+								{/* <button className={'btn btn-outline-primary btn-sm'} >Learn More</button> */}
+							</div>
 						</div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
@@ -68,6 +79,15 @@ const ProjectsPage = (): JSX.Element => {
 								<React.Fragment>{getImages(1)}</React.Fragment>
 							</SkillsImagesContainer>
 						</div>
+					</SectionItem>
+					<SectionItem className={"projects"}>
+						<div></div>
+					</SectionItem>
+					<SectionItem className={"projects"}>
+						<div></div>
+					</SectionItem>
+					<SectionItem className={"projects"}>
+						<div></div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
 						<div></div>

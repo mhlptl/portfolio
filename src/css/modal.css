@@ -53,6 +53,7 @@
 	cursor: pointer;
 	font-size: 1.25rem;
 	color: #d33e43;
+	border-radius: 5px;
 }
 
 .modal-footer {
@@ -67,7 +68,6 @@ button:focus {
 
 .btn-outline {
 	border: 1px solid #d33e43;
-	border-radius: 5px;
 }
 
 .btn-md {
@@ -85,4 +85,27 @@ button:focus {
 	.modal {
 		height: 50%;
 	}
+}
+
+.btn-outline-primary {
+	border: 1px solid var(--foreground);
+	color: var(--foreground);
+}
+
+.btn-outline-primary:hover {
+	background-color: var(--foreground);
+	color: var(--background);
+}
+
+.btn-sm {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-size: 1rem;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+	width: 90%;
 }
