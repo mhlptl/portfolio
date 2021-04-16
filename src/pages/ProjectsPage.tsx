@@ -33,7 +33,8 @@ const ProjectsPage = (): JSX.Element => {
 
 	const openModal = (e: React.MouseEvent) => {
 		e.preventDefault();
-		const src = e.target as HTMLImageElement.src;
+		// eslint-disable-next-line no-extra-parens
+		const src = (e.target as HTMLImageElement).src;
 		setModalSrc(src);
 		setShowModal(true);
 	};
