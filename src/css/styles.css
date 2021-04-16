@@ -9,6 +9,7 @@
 	--scroll-thumb: #4e4d4a;
 	--scroll-track: var(--darker);
 	--invert-percent: 0%;
+	--modal: #1a1919;
 }
 
 :root[color-mode="light"] {
@@ -22,6 +23,7 @@
 	--scroll-thumb: #676767;
 	--scroll-track: var(--shadow);
 	--invert-percent: 100%;
+	--modal: #90959e;
 }
 
 @media (prefers-color-scheme: dark) {
