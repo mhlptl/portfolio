@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Name from "../components/Name";
 import SlantedBox from "../components/SlantedBox";
 import ExperiencePage from "./ExperiencePage";
-// import ProjectsPage from "./ProjectsPage";
+import ProjectsPage from "./ProjectsPage";
 import SkillsPage from "./SkillsPage";
 
 interface HomePageProps {
@@ -20,7 +20,7 @@ const HomePage = (props: HomePageProps): JSX.Element => {
 			<SlantedBox size={"sm"} className={"raise-sm"} />
 			<ExperiencePage />
 			<SkillsPage />
-			{/* <ProjectsPage /> */}
+			<ProjectsPage />
 			<Footer />
 		</div>
 	);

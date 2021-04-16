@@ -88,12 +88,6 @@ body {
 	background-color: var(--background);
 }
 
-/* @supports(padding: max(0px)) {
-	body {
-		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-	}
-} */
-
 #root {
 	min-height: 100vh;
 	position: relative;
@@ -125,30 +119,11 @@ body {
 	display: none;
 }
 
-/* skill */
-
-/* .section-title {
-	font-size: 3rem;
-	text-shadow: 2px 2px #d33e43;
-	display: inline-block;
-} */
-
-/* .section-title:hover {
-	color: #d33e43;
-	text-shadow: 0px 0px 5px var(--foreground);
-} */
-
 .section-subtitle {
 	/* position: absolute; */
 	font-size: 2.5rem;
 	/* color: var(--darker-inverse); */
 }
-
-/* .section-container {
-	margin-left: 4rem;
-	margin-right: 4rem;
-	margin-bottom: 2rem;
-} */
 
 /* project */
 
@@ -257,128 +232,11 @@ body {
 	background-color: #e0787b;
 }
 
-/* footer */
-
-/* .footer {
-	display: flex;
-	justify-content: center;	
-	align-items: center;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 4rem;
-	font-size: 1rem; */
-/* margin-left: 1rem; */
-/* margin-right: 1rem; */
-/* }	 */
-
-/* skills */
-
-/* .skills {
-	width: 4rem;
-	height: inherit;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.skills:first-child {
-	margin-left: 0;
-}
-
-.skills:last-child {
-	margin-right: 0;
-} */
-
-/* sub-section */
-/* 
-.inner-section {
-	display: flex;
-	width: 100%;
-	height: 30rem;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.skills-container {
-	margin-top: 2rem;
-}
-
-.section-list {
-	list-style-type: "☁️ ";
-	margin: 0;
-	padding: 0;
-	font-size: 1.15rem;
-	margin-left: 2rem;
-	margin-top: 2rem;
-} */
-
 .transparent {
 	background-color: #c5d4e8;
 }
 
-/* .inner-section {
-	background-color: #abafb6;
-	background-color: #201f1f;
-	background-color: var(--darker);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	border-radius: 0.5rem;
-} */
-
-/* .inner-section:nth-child(even) {
-	padding-left: 2rem;
-}
-
-.inner-section:nth-child(odd) {
-	padding-right: 2rem;
-} */
-
-/* .section-description {
-	width: inherit;
-	display: flex;
-	justify-content: center;
-}
-
-.section-subtitle {
-	text-align: center;
-	font-size: 2.75rem;
-}
-
-.skills-container {
-	text-align: center;
-}
-
-.section-list {
-	font-size: 1.2rem;
-} */
-
-/* .section-image-container {
-	height: inherit;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
-
-/* experience */
-
-/* .position-information {
-	text-align: center;
-	font-size: 1.15rem;
-}
-
-.position {
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.experience-information {
-	list-style-type: "🏡 ";
-	margin: 0;
-	padding: 0;
-	margin-left: 2rem;
-	margin-top: 2rem;
-} */
+/* footer */
 
 .footer {
 	/* display: grid;
