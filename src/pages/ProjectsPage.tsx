@@ -18,7 +18,10 @@ import Modal from "../components/Modal";
 
 const imageList = [
 	[HTMLSVG, CSSSVG, JSSVG, ReactSVG, NodeSVG],
-	[HTMLSVG, CSSSVG, TSSVG, ReactSVG, NodeSVG, DockerSVG, PGSVG]
+	[HTMLSVG, CSSSVG, TSSVG, ReactSVG, NodeSVG, DockerSVG, PGSVG],
+	[HTMLSVG, CSSSVG, JSSVG],
+	[ReactSVG, HTMLSVG, CSSSVG, JSSVG],
+	[ReactSVG, NodeSVG, HTMLSVG, JSSVG, CSSSVG]
 ];
 
 const getImages = (index: number) => {
@@ -66,8 +69,17 @@ const ProjectsPage = (): JSX.Element => {
 								<p>keep track of water intake data</p>
 							</div>
 							<div className={"btn-container"}>
-								<button className={"btn btn-outline-primary btn-sm"}>Repo</button>
-								<button className={"btn btn-outline-primary btn-sm"}>Live Site</button>
+								<button className={"btn btn-outline-primary btn-sm"}>
+									<a
+										className={"btn-link"}
+										href={"https://www.github.com/mhlptl/watertracker"}
+										target='_blank'
+										rel='noreferrer noopener'
+									>
+										Repository
+									</a>
+								</button>
+								{/* <button className={"btn btn-outline-primary btn-sm"}>Live Site</button> */}
 								{/* <button className={'btn btn-outline-primary btn-sm'} >Learn More</button> */}
 							</div>
 						</div>
@@ -81,13 +93,28 @@ const ProjectsPage = (): JSX.Element => {
 						</div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
-						<div></div>
+						<div className={"project-section-item"}>
+							<h1 className={"section-item-header"}>Minesweeper</h1>
+							<SkillsImagesContainer direction={"none"}>
+								<React.Fragment>{getImages(2)}</React.Fragment>
+							</SkillsImagesContainer>
+						</div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
-						<div></div>
+						<div className={"project-section-item"}>
+							<h1 className={"section-item-header"}>Snake Game</h1>
+							<SkillsImagesContainer direction={"none"}>
+								<React.Fragment>{getImages(3)}</React.Fragment>
+							</SkillsImagesContainer>
+						</div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
-						<div></div>
+						<div className={"project-section-item"}>
+							<h1 className={"section-item-header"}>Tweet Deleter</h1>
+							<SkillsImagesContainer direction={"none"}>
+								<React.Fragment>{getImages(4)}</React.Fragment>
+							</SkillsImagesContainer>
+						</div>
 					</SectionItem>
 					<SectionItem className={"projects"}>
 						<div></div>
