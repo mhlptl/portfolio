@@ -15,6 +15,7 @@ import PGSVG from "../svg/postgres.svg";
 
 import Skill from "../components/SkillsImage";
 import Modal from "../components/Modal";
+import Project from "../components/Project";
 
 const imageList = [
 	[HTMLSVG, CSSSVG, JSSVG, ReactSVG, NodeSVG],
@@ -50,40 +51,13 @@ const ProjectsPage = (): JSX.Element => {
 		<React.Fragment>
 			<Section id={"projects"} title={"Projects"}>
 				<div className={"projects-list"}>
-					<SectionItem className={"projects"}>
-						<div className={"project-section-item"}>
-							<h1 className={"section-item-header"}>Water Tracker</h1>
-							<SkillsImagesContainer direction={"none"}>
-								<React.Fragment>{getImages(0)}</React.Fragment>
-							</SkillsImagesContainer>
-							<img
-								onClick={openModal}
-								className={"project-screenshot"}
-								src={"/images/waterintake.png"}
-								alt={"water intake project screenshot"}
-							/>
-							<div className={"project-info"}>
-								<p>keep track of water intake data</p>
-								<p>keep track of water intake data</p>
-								<p>keep track of water intake data</p>
-								<p>keep track of water intake data</p>
-							</div>
-							<div className={"btn-container"}>
-								<button className={"btn btn-outline-primary btn-sm"}>
-									<a
-										className={"btn-link"}
-										href={"https://www.github.com/mhlptl/watertracker"}
-										target='_blank'
-										rel='noreferrer noopener'
-									>
-										Repository
-									</a>
-								</button>
-								{/* <button className={"btn btn-outline-primary btn-sm"}>Live Site</button> */}
-								{/* <button className={'btn btn-outline-primary btn-sm'} >Learn More</button> */}
-							</div>
-						</div>
-					</SectionItem>
+					<Project
+						openModal={openModal}
+						images={getImages(0)}
+						projectName={"Water Tracker"}
+						href={"https://www.github.com/mhlptl/watertracker"}
+						src={"/images/waterintake.png"}
+					/>
 					<SectionItem className={"projects"}>
 						<div className={"project-section-item"}>
 							<h1 className={"section-item-header"}>Photo Display</h1>
