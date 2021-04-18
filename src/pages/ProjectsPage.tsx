@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Section from "../components/Section";
 import SectionItem from "../components/SectionItem";
-import SkillsImagesContainer from "../components/SkillsImagesContainer";
+// import SkillsImagesContainer from "../components/SkillsImagesContainer";
 import "../css/projects.css";
 
 import HTMLSVG from "../svg/html5.svg";
@@ -31,6 +31,29 @@ const getImages = (index: number) => {
 	});
 };
 
+const projects = [
+	{
+		name: "Water Tracker",
+		repo: "https://www.github.com/mhlptl/watertracker",
+		src: "/images/waterintake.png",
+		skills: getImages(0)
+	},
+	{
+		name: "Photo Display",
+		repo: "https://github.com/mhlptl/photo-display",
+		src: "/images/placeholder.png",
+		skills: getImages(1)
+	},
+	{name: "Minesweeper", repo: "https://github.com/mhlptl/minesweeper", src: "/images/placeholder.png", skills: getImages(2)},
+	{name: "Snake Game", repo: "https://github.com/mhlptl/snakegame", src: "/images/placeholder.png", skills: getImages(3)},
+	{
+		name: "Tweet Deleter",
+		repo: "https://github.com/mhlptl/tweetdeleter",
+		src: "/images/placeholder.png",
+		skills: getImages(4)
+	}
+];
+
 const ProjectsPage = (): JSX.Element => {
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const [modalSrc, setModalSrc] = useState<string>("");
@@ -39,7 +62,8 @@ const ProjectsPage = (): JSX.Element => {
 		e.preventDefault();
 		// eslint-disable-next-line no-extra-parens
 		const src = (e.target as HTMLImageElement).src;
-		setModalSrc(src);
+		const fileName = src.replace(/^.*[\\/]/, "");
+		setModalSrc(`/images/${fileName}`);
 		setShowModal(true);
 	};
 
@@ -51,45 +75,18 @@ const ProjectsPage = (): JSX.Element => {
 		<React.Fragment>
 			<Section id={"projects"} title={"Projects"}>
 				<div className={"projects-list"}>
-					<Project
-						openModal={openModal}
-						images={getImages(0)}
-						projectName={"Water Tracker"}
-						href={"https://www.github.com/mhlptl/watertracker"}
-						src={"/images/waterintake.png"}
-					/>
-					<SectionItem className={"projects"}>
-						<div className={"project-section-item"}>
-							<h1 className={"section-item-header"}>Photo Display</h1>
-							<SkillsImagesContainer direction={"none"}>
-								<React.Fragment>{getImages(1)}</React.Fragment>
-							</SkillsImagesContainer>
-						</div>
-					</SectionItem>
-					<SectionItem className={"projects"}>
-						<div className={"project-section-item"}>
-							<h1 className={"section-item-header"}>Minesweeper</h1>
-							<SkillsImagesContainer direction={"none"}>
-								<React.Fragment>{getImages(2)}</React.Fragment>
-							</SkillsImagesContainer>
-						</div>
-					</SectionItem>
-					<SectionItem className={"projects"}>
-						<div className={"project-section-item"}>
-							<h1 className={"section-item-header"}>Snake Game</h1>
-							<SkillsImagesContainer direction={"none"}>
-								<React.Fragment>{getImages(3)}</React.Fragment>
-							</SkillsImagesContainer>
-						</div>
-					</SectionItem>
-					<SectionItem className={"projects"}>
-						<div className={"project-section-item"}>
-							<h1 className={"section-item-header"}>Tweet Deleter</h1>
-							<SkillsImagesContainer direction={"none"}>
-								<React.Fragment>{getImages(4)}</React.Fragment>
-							</SkillsImagesContainer>
-						</div>
-					</SectionItem>
+					{projects.map((project, index) => {
+						return (
+							<Project
+								projectName={project.name}
+								openModal={openModal}
+								repo={project.repo}
+								src={project.src}
+								skills={project.skills}
+								key={index}
+							/>
+						);
+					})}
 					<SectionItem className={"projects"}>
 						<div></div>
 					</SectionItem>
