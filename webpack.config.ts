@@ -14,7 +14,9 @@ const config: Configuration = {
 	output: {
 		path: path.resolve(__dirname, "public"),
 		filename: "main.js",
-		clean: true,
+		clean: {
+			keep: /images\//
+		},
 		publicPath: "/"
 	},
 	devServer: {
