@@ -3,3 +3,4 @@ public/**/*
 !public/images/
 !public/images/*
 .vscode
+.vercel
