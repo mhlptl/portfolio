@@ -3,7 +3,7 @@ import {addClass} from "../utils";
 
 interface SkillsImagesContainerProps {
 	children: JSX.Element;
-	direction: string;
+	direction?: string;
 }
 
 const SkillsImagesContainer = (props: SkillsImagesContainerProps): JSX.Element => {
@@ -23,7 +23,7 @@ const SkillsImagesContainer = (props: SkillsImagesContainerProps): JSX.Element =
 	}, []);
 
 	return (
-		<div ref={imageRef} className={`skills-images-container ${direction}`}>
+		<div ref={imageRef} className={`skills-images-container ${direction ? direction : ""}`}>
 			{children}
 		</div>
 	);

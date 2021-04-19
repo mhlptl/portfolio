@@ -19,7 +19,7 @@ const Project = (props: ProjectProps): JSX.Element => {
 		<SectionItem className={"projects"}>
 			<div className={"project-section-item"}>
 				<h1 className={"section-item-header"}>{projectName}</h1>
-				<SkillsImagesContainer direction={"none"}>
+				<SkillsImagesContainer>
 					<React.Fragment>{skills}</React.Fragment>
 				</SkillsImagesContainer>
 				<img onClick={openModal} className={"project-screenshot"} src={src} alt={"project screenshot"} />
