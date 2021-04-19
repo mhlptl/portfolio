@@ -18,10 +18,6 @@
 	transform: translateX(-200%);
 }
 
-/* .house {
-	list-style-type: "🏡";
-} */
-
 .house .list-item::before {
 	content: "🏡 ";
 	margin-inline-start: -3.3ch;

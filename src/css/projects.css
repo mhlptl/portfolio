@@ -1,5 +1,4 @@
 .projects {
-	/* width: 20%; */
 	height: 32rem;
 }
 
@@ -29,7 +28,6 @@
 .project-screenshot {
 	margin-top: 1rem;
 	width: 90%;
-	/* border: 1px solid #d33e43; */
 	cursor: pointer;
 }
 
