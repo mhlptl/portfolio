@@ -65,10 +65,6 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 		};
 	}, [activeIndex]);
 
-	// const handleNavClick = (index: number) => {
-	// 	setActiveIndex(index);
-	// };
-
 	return (
 		<header className='header'>
 			<nav ref={navRef} className={`navbar ${!hide ? "navbar-small" : ""}`}>
@@ -100,10 +96,6 @@ const NavBar = (props: NavBarProps): JSX.Element => {
 							/>
 						);
 					})}
-					{/* <NavItem name={"Experience"} link={"#experience"} />
-					<NavItem name={"Skills"} link={"#skills"} />
-					<NavItem name={"Projects"} link={"#projects"} />
-					<NavItem name={"Contact"} link={"#contact"} /> */}
 				</div>
 				<ColorToggle />
 
