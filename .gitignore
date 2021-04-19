@@ -1,6 +1,5 @@
 node_modules/
-public/**/*
-!public/images/
-!public/images/*
+public/**/*.js
+public/**/*.html
 .vscode
 .vercel
