@@ -18,11 +18,11 @@ import Modal from "../components/Modal";
 import Project from "../components/Project";
 
 const imageList = [
-	[HTMLSVG, CSSSVG, JSSVG, ReactSVG, NodeSVG],
-	[HTMLSVG, CSSSVG, TSSVG, ReactSVG, NodeSVG, DockerSVG, PGSVG],
+	[ReactSVG, NodeSVG, HTMLSVG, CSSSVG, JSSVG],
+	[ReactSVG, NodeSVG, TSSVG, HTMLSVG, CSSSVG, DockerSVG, PGSVG],
 	[HTMLSVG, CSSSVG, JSSVG],
 	[ReactSVG, HTMLSVG, CSSSVG, JSSVG],
-	[ReactSVG, NodeSVG, HTMLSVG, JSSVG, CSSSVG]
+	[ReactSVG, NodeSVG, HTMLSVG, CSSSVG, JSSVG]
 ];
 
 const getImages = (index: number) => {
@@ -36,21 +36,61 @@ const projects = [
 		name: "Water Tracker",
 		repo: "https://www.github.com/mhlptl/watertracker",
 		src: "/images/waterintake.png",
-		skills: getImages(0)
+		skills: getImages(0),
+		info: [
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data"
+		]
 	},
 	{
 		name: "Photo Display",
 		repo: "https://github.com/mhlptl/photo-display",
 		src: "/images/placeholder.png",
-		skills: getImages(1)
+		skills: getImages(1),
+		info: [
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data"
+		]
 	},
-	{name: "Minesweeper", repo: "https://github.com/mhlptl/minesweeper", src: "/images/placeholder.png", skills: getImages(2)},
-	{name: "Snake Game", repo: "https://github.com/mhlptl/snakegame", src: "/images/placeholder.png", skills: getImages(3)},
+	{
+		name: "Minesweeper",
+		repo: "https://github.com/mhlptl/minesweeper",
+		src: "/images/placeholder.png",
+		skills: getImages(2),
+		info: [
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data"
+		]
+	},
+	{
+		name: "Snake Game",
+		repo: "https://github.com/mhlptl/snakegame",
+		src: "/images/placeholder.png",
+		skills: getImages(3),
+		info: [
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data"
+		]
+	},
 	{
 		name: "Tweet Deleter",
 		repo: "https://github.com/mhlptl/tweetdeleter",
 		src: "/images/placeholder.png",
-		skills: getImages(4)
+		skills: getImages(4),
+		info: [
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data",
+			"keep track of water intake data"
+		]
 	}
 ];
 
@@ -84,6 +124,7 @@ const ProjectsPage = (): JSX.Element => {
 								src={project.src}
 								skills={project.skills}
 								key={index}
+								projectInfo={project.info}
 							/>
 						);
 					})}

@@ -7,13 +7,13 @@ interface ProjectProps {
 	projectName: string;
 	repo: string;
 	src: string;
-	projectInfo?: string;
+	projectInfo: string[];
 	skills: JSX.Element[];
 	liveHref?: string;
 }
 
 const Project = (props: ProjectProps): JSX.Element => {
-	const {openModal, skills, projectName, repo, liveHref, src} = props;
+	const {openModal, skills, projectName, repo, liveHref, src, projectInfo} = props;
 
 	return (
 		<SectionItem className={"projects"}>
@@ -24,10 +24,9 @@ const Project = (props: ProjectProps): JSX.Element => {
 				</SkillsImagesContainer>
 				<img onClick={openModal} className={"project-screenshot"} src={src} alt={"project screenshot"} />
 				<div className={"project-info"}>
-					<p>keep track of water intake data</p>
-					<p>keep track of water intake data</p>
-					<p>keep track of water intake data</p>
-					<p>keep track of water intake data</p>
+					{projectInfo.map((info, index) => {
+						return <p key={index}>{info}</p>;
+					})}
 				</div>
 				<div className={"btn-container"}>
 					<button className={"btn btn-outline-primary btn-sm"}>
