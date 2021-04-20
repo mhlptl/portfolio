@@ -24,9 +24,11 @@ const Project = (props: ProjectProps): JSX.Element => {
 				</SkillsImagesContainer>
 				<img onClick={openModal} className={"project-screenshot"} src={src} alt={"project screenshot"} />
 				<div className={"project-info"}>
-					{projectInfo.map((info, index) => {
-						return <p key={index}>{info}</p>;
-					})}
+					<ul className={"project-info-list"}>
+						{projectInfo.map((info, index) => {
+							return <li key={index}>{info}</li>;
+						})}
+					</ul>
 				</div>
 				<div className={"btn-container"}>
 					<button className={"btn btn-outline-primary btn-sm"}>

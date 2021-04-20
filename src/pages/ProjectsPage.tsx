@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 import Section from "../components/Section";
-import SectionItem from "../components/SectionItem";
-// import SkillsImagesContainer from "../components/SkillsImagesContainer";
 import "../css/projects.css";
 
 import HTMLSVG from "../svg/html5.svg";
@@ -37,12 +35,7 @@ const projects = [
 		repo: "https://www.github.com/mhlptl/watertracker",
 		src: "/images/waterintake.png",
 		skills: getImages(0),
-		info: [
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data"
-		]
+		info: ["Track amount of water consumed", "Charts are made using ChartJS"]
 	},
 	{
 		name: "Photo Display",
@@ -50,10 +43,9 @@ const projects = [
 		src: "/images/placeholder.png",
 		skills: getImages(1),
 		info: [
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data"
+			"Open Source Photo Viewer",
+			"Containerized using Docker to simplify download",
+			"PostgreSQL used to keep track of filenames"
 		]
 	},
 	{
@@ -61,36 +53,21 @@ const projects = [
 		repo: "https://github.com/mhlptl/minesweeper",
 		src: "/images/placeholder.png",
 		skills: getImages(2),
-		info: [
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data"
-		]
+		info: ["Minesweeper built with Vanilla JS", "Three Game Modes (Easy, Medium, Hard)"]
 	},
 	{
 		name: "Snake Game",
 		repo: "https://github.com/mhlptl/snakegame",
 		src: "/images/placeholder.png",
 		skills: getImages(3),
-		info: [
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data"
-		]
+		info: ["Snake Game built with ReactJS"]
 	},
 	{
 		name: "Tweet Deleter",
 		repo: "https://github.com/mhlptl/tweetdeleter",
 		src: "/images/placeholder.png",
 		skills: getImages(4),
-		info: [
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data",
-			"keep track of water intake data"
-		]
+		info: ["Web Interface to Delete Tweets", "Backend built using ExpressJS"]
 	}
 ];
 
@@ -128,15 +105,6 @@ const ProjectsPage = (): JSX.Element => {
 							/>
 						);
 					})}
-					<SectionItem className={"projects"}>
-						<div></div>
-					</SectionItem>
-					<SectionItem className={"projects"}>
-						<div></div>
-					</SectionItem>
-					<SectionItem className={"projects"}>
-						<div></div>
-					</SectionItem>
 				</div>
 			</Section>
 			{showModal && <Modal src={modalSrc} closeModal={closeModal} />}
