@@ -66,10 +66,6 @@ html,
 body {
 	font-size: 100%;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
-	font-family: "JetBrains Mono", monospace;
-	font-family: "Share Tech Mono", monospace;
-	font-family: "Roboto Mono", monospace;
 	font-family: "IBM Plex Mono", monospace;
 	scroll-behavior: smooth;
 	color: #ccd3d9;
