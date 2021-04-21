@@ -40,32 +40,32 @@ const projects = [
 	{
 		name: "Photo Display",
 		repo: "https://github.com/mhlptl/photo-display",
-		src: "/images/placeholder.png",
+		src: "/images/photodisplay.png",
 		skills: getImages(1),
 		info: [
 			"Open Source Photo Viewer",
-			"Containerized using Docker to simplify download",
+			"Containerized using Docker to simplify deployment",
 			"PostgreSQL used to keep track of filenames"
 		]
 	},
 	{
 		name: "Minesweeper",
 		repo: "https://github.com/mhlptl/minesweeper",
-		src: "/images/placeholder.png",
+		src: "/images/minesweeper.png",
 		skills: getImages(2),
 		info: ["Minesweeper built with Vanilla JS", "Three Game Modes (Easy, Medium, Hard)"]
 	},
 	{
 		name: "Snake Game",
 		repo: "https://github.com/mhlptl/snakegame",
-		src: "/images/placeholder.png",
+		src: "/images/snakegame.png",
 		skills: getImages(3),
 		info: ["Snake Game built with ReactJS"]
 	},
 	{
 		name: "Tweet Deleter",
 		repo: "https://github.com/mhlptl/tweetdeleter",
-		src: "/images/placeholder.png",
+		src: "/images/tweetdeleter.png",
 		skills: getImages(4),
 		info: ["Web Interface to Delete Tweets", "Backend built using ExpressJS"]
 	}
