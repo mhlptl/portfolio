@@ -1,6 +1,9 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import {Configuration as WebpackConfiguration} from "webpack";
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+// import {BundleAnalyzerPlugin} from 'webpack-bundle-analyzer';
 
 const config: WebpackConfiguration = {
 	mode: "production",
@@ -19,7 +22,7 @@ const config: WebpackConfiguration = {
 		rules: [
 			{
 				test: /\.css$/,
-				use: ["style-loader", "css-loader"]
+				use: [MiniCssExtractPlugin.loader, "css-loader"]
 			},
 			{
 				test: /\.tsx?$/,
@@ -39,13 +42,20 @@ const config: WebpackConfiguration = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "index.html")
+		}),
+		new MiniCssExtractPlugin({
+			filename: "[name].css",
+			chunkFilename: "[id].css"
 		})
+		// , new BundleAnalyzerPlugin()
 	],
 	optimization: {
 		splitChunks: {
 			chunks: "all"
 		},
-		runtimeChunk: "single"
+		runtimeChunk: "single",
+		minimize: true,
+		minimizer: [`...`, new CssMinimizerPlugin()]
 	}
 };
 

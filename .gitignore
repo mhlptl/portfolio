@@ -3,5 +3,6 @@ public/**/*.js
 public/**/*.html
 public/**/*.map
 public/**/*.txt
+public/**/*.css
 .vscode
 .vercel
