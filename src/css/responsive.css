@@ -104,6 +104,13 @@
 	}
 }
 
+@media only screen and (min-width: 540px) and (max-width: 575px) {
+	.project-screenshot {
+		width: 80%;
+		border-radius: 5px;
+	}
+}
+
 @media only screen and (max-width: 640px) {
 	.section-image-container {
 		display: none;
@@ -245,6 +252,11 @@
 @media only screen and (min-width: 1800px) {
 	.name-container {
 		margin-top: -9rem;
+	}
+
+	.modal-body > img {
+		width: 80%;
+		border-radius: 5px;
 	}
 }
 

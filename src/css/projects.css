@@ -1,5 +1,6 @@
 .projects {
-	height: 32rem;
+	height: 34rem;
+	/* min-height: 32rem; */
 }
 
 .projects-list {

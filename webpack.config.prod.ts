@@ -1,31 +1,16 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import {Configuration as WebpackDevServerConfiguration} from "webpack-dev-server";
 import {Configuration as WebpackConfiguration} from "webpack";
 
-interface Configuration extends WebpackConfiguration {
-	devServer?: WebpackDevServerConfiguration;
-}
-
-const config: Configuration = {
-	mode: "development",
-	devtool: "inline-source-map",
+const config: WebpackConfiguration = {
+	mode: "production",
+	devtool: "source-map",
 	context: path.resolve(__dirname, "src"),
 	entry: "./index.tsx",
 	output: {
 		path: path.resolve(__dirname, "public"),
-		filename: "main.js",
+		filename: "[name].[contenthash].js",
 		publicPath: "/"
-	},
-	devServer: {
-		host: "0.0.0.0",
-		liveReload: true,
-		port: 3000,
-		disableHostCheck: true,
-		contentBase: path.join(__dirname, "public"),
-		openPage: "http://localhost:3000",
-		historyApiFallback: true,
-		compress: true
 	},
 	resolve: {
 		extensions: [".tsx", ".ts", ".jsx", ".js"]
@@ -55,7 +40,13 @@ const config: Configuration = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "index.html")
 		})
-	]
+	],
+	optimization: {
+		splitChunks: {
+			chunks: "all"
+		},
+		runtimeChunk: "single"
+	}
 };
 
 export default config;
