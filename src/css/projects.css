@@ -29,6 +29,12 @@
 	margin-right: 0.5rem !important;
 }
 
+.project-ss-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .project-screenshot {
 	margin-top: 1rem;
 	width: 90%;
