@@ -33,14 +33,14 @@ const projects = [
 	{
 		name: "Water Tracker",
 		repo: "https://www.github.com/mhlptl/watertracker",
-		src: "/images/waterintake",
+		src: "/images/waterintake.jpeg",
 		skills: getImages(0),
 		info: ["Track amount of water consumed", "Charts are made using ChartJS"]
 	},
 	{
 		name: "Photo Display",
 		repo: "https://github.com/mhlptl/photo-display",
-		src: "/images/photodisplay",
+		src: "/images/photodisplay.jpeg",
 		skills: getImages(1),
 		info: [
 			"Open Source Photo Viewer",
@@ -51,21 +51,21 @@ const projects = [
 	{
 		name: "Minesweeper",
 		repo: "https://github.com/mhlptl/minesweeper",
-		src: "/images/minesweeper",
+		src: "/images/minesweeper.png",
 		skills: getImages(2),
 		info: ["Minesweeper built with Vanilla JS", "Three Game Modes (Easy, Medium, Hard)"]
 	},
 	{
 		name: "Snake Game",
 		repo: "https://github.com/mhlptl/snakegame",
-		src: "/images/snakegame",
+		src: "/images/snakegame.png",
 		skills: getImages(3),
 		info: ["Snake Game built with ReactJS"]
 	},
 	{
 		name: "Tweet Deleter",
 		repo: "https://github.com/mhlptl/tweetdeleter",
-		src: "/images/tweetdeleter",
+		src: "/images/tweetdeleter.png",
 		skills: getImages(4),
 		info: ["Web Interface to Delete Tweets", "Backend built using ExpressJS"]
 	}
@@ -79,7 +79,7 @@ const ProjectsPage = (): JSX.Element => {
 		e.preventDefault();
 		// eslint-disable-next-line no-extra-parens
 		const src = (e.target as HTMLImageElement).src;
-		const fileName = src.replace(/^.*[\\/]/, "").split(".", 1);
+		const fileName = src.replace(/^.*[\\/]/, "");
 		setModalSrc(`/images/${fileName}`);
 		setShowModal(true);
 	};

@@ -19,11 +19,7 @@ const Modal = (props: ModalProps): JSX.Element => {
 			<div className={"modal"}>
 				<div className={"modal-header"}></div>
 				<div className={"modal-body"}>
-					<picture className={"modal-body"}>
-						<source srcSet={`${src}.webp`} type={"image/webp"} />
-						<source srcSet={`${src}.png`} type={"image/png"} />
-						<img src={`${src}.png`} alt={"project screenshot enlarged"} />
-					</picture>
+					<img src={src} alt={"project screenshot enlarged"} />
 				</div>
 				<div className={"modal-footer"}>
 					<button onClick={closeModal} className={"btn btn-md btn-outline"}>

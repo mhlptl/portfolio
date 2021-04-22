@@ -22,11 +22,7 @@ const Project = (props: ProjectProps): JSX.Element => {
 				<SkillsImagesContainer>
 					<React.Fragment>{skills}</React.Fragment>
 				</SkillsImagesContainer>
-				<picture className={"project-ss-container"}>
-					<source srcSet={`${src}.webp`} type={"image/webp"} />
-					<source srcSet={`${src}.png`} type={"image/png"} />
-					<img onClick={openModal} className={"project-screenshot"} src={`${src}.png`} alt={"project screenshot"} />
-				</picture>
+				<img onClick={openModal} className={"project-screenshot"} src={src} alt={"project screenshot"} />
 				<div className={"project-info"}>
 					<ul className={"project-info-list"}>
 						{projectInfo.map((info, index) => {
