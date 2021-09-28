@@ -3,6 +3,7 @@ import "../css/experience.css";
 import SectionItem from "./SectionItem";
 import SectionItemInfo from "./SectionItemInfo";
 import House from "../images/select_house.svg";
+import Medical from "../images/medical.svg";
 import SectionImage from "./SectionImage";
 import ExperienceHeader from "./ExperienceHeader";
 import SectionItemList from "./SectionItemList";
@@ -21,17 +22,35 @@ const Experience = (): JSX.Element => {
 					<SectionItemInfo>
 						<React.Fragment>
 							<ExperienceHeader
-								companyName={"Proptio"}
-								companyPosition={"Software Engineer"}
-								companyTimeline={["September 2018 - November 2019", "(1 year, 2 months)"]}
+								companyName={"OXOS Medical"}
+								companyPosition={"Software Engineer | Platform"}
+								companyTimeline={["May 2021 - Present", "Remote"]}
 								direction={"left"}
 							/>
-							<SectionItemList direction={"left"} list={list} bulletStyle={"house"} />
+							{/* <SectionItemList direction={"left"} list={list} bulletStyle={"house"} /> */}
 						</React.Fragment>
 					</SectionItemInfo>
 					<SectionImage>
+						<Medical className={"section-item-image"} />
+					</SectionImage>
+				</React.Fragment>
+			</SectionItem>
+			<SectionItem>
+				<React.Fragment>
+					<SectionImage>
 						<House className={"section-item-image"} />
 					</SectionImage>
+					<SectionItemInfo>
+						<React.Fragment>
+							<ExperienceHeader
+								companyName={"Proptio"}
+								companyPosition={"Software Engineer"}
+								companyTimeline={["September 2018 - November 2019", "(1 year, 2 months)"]}
+								direction={"right"}
+							/>
+							<SectionItemList direction={"right"} list={list} bulletStyle={"house"} />
+						</React.Fragment>
+					</SectionItemInfo>
 				</React.Fragment>
 			</SectionItem>
 		</React.Fragment>

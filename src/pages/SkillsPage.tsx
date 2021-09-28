@@ -54,55 +54,55 @@ const SkillsPage = (): JSX.Element => {
 			<React.Fragment>
 				<SectionItem>
 					<React.Fragment>
-						<SectionImage>
-							<Webdev className={"section-item-image skills-item-image"} />
-						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
-								<SkillsHeader skillsName={"Full Stack Development"} direction={"right"}>
-									<SkillsImagesContainer direction={"right"}>
+								<SkillsHeader skillsName={"Full Stack Development"} direction={"left"}>
+									<SkillsImagesContainer direction={"left"}>
 										<React.Fragment>{getImages(0)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
-								<SectionItemList direction={"right"} list={list[0]} bulletStyle={"cloud"} />
+								<SectionItemList direction={"left"} list={list[0]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
+						<SectionImage>
+							<Webdev className={"section-item-image skills-item-image"} />
+						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
 
 				<SectionItem>
 					<React.Fragment>
-						<SectionItemInfo>
-							<React.Fragment>
-								<SkillsHeader skillsName={"Cloud Infrastructure"} direction={"left"}>
-									<SkillsImagesContainer direction={"left"}>
-										<React.Fragment>{getImages(1)}</React.Fragment>
-									</SkillsImagesContainer>
-								</SkillsHeader>
-								<SectionItemList direction={"left"} list={list[1]} bulletStyle={"cloud"} />
-							</React.Fragment>
-						</SectionItemInfo>
 						<SectionImage>
 							<Cloud className={"section-item-image skills-item-image"} />
 						</SectionImage>
+						<SectionItemInfo>
+							<React.Fragment>
+								<SkillsHeader skillsName={"Cloud Infrastructure"} direction={"right"}>
+									<SkillsImagesContainer direction={"right"}>
+										<React.Fragment>{getImages(1)}</React.Fragment>
+									</SkillsImagesContainer>
+								</SkillsHeader>
+								<SectionItemList direction={"right"} list={list[1]} bulletStyle={"cloud"} />
+							</React.Fragment>
+						</SectionItemInfo>
 					</React.Fragment>
 				</SectionItem>
 
 				<SectionItem>
 					<React.Fragment>
-						<SectionImage>
-							<Automation className={"section-item-image skills-item-image"} />
-						</SectionImage>
 						<SectionItemInfo>
 							<React.Fragment>
-								<SkillsHeader skillsName={"Software Development"} direction={"right"}>
-									<SkillsImagesContainer direction={"right"}>
+								<SkillsHeader skillsName={"Software Development"} direction={"left"}>
+									<SkillsImagesContainer direction={"left"}>
 										<React.Fragment>{getImages(2)}</React.Fragment>
 									</SkillsImagesContainer>
 								</SkillsHeader>
-								<SectionItemList direction={"right"} list={list[2]} bulletStyle={"cloud"} />
+								<SectionItemList direction={"left"} list={list[2]} bulletStyle={"cloud"} />
 							</React.Fragment>
 						</SectionItemInfo>
+						<SectionImage>
+							<Automation className={"section-item-image skills-item-image"} />
+						</SectionImage>
 					</React.Fragment>
 				</SectionItem>
 			</React.Fragment>
