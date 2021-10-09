@@ -21,9 +21,10 @@ const config: Configuration = {
 		host: "0.0.0.0",
 		liveReload: true,
 		port: 3000,
-		disableHostCheck: true,
-		contentBase: path.join(__dirname, "public"),
-		openPage: "http://localhost:3000",
+		// disableHostCheck: true,
+		open: {
+			target: ["http://localhost:3000"]
+		},
 		historyApiFallback: true,
 		compress: true
 	},
